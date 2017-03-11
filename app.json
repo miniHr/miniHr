@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/applicant/applicant",
-    "pages/enterprise/enterprise"
+    "pages/applicant/list/list",
+    "pages/applicant/detail/detail",
+    "pages/enterprise/list/list"
   ]
 }

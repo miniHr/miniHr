@@ -1,4 +1,4 @@
-// pages/applicant/applicant.js
+// pages/enterprise/list/list.js
 Page({
   data:{},
   onLoad:function(options){

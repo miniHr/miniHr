@@ -9,7 +9,7 @@ Page({
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../applicant/applicant'
+      url: '../applicant/list/list'
     })
   },
   onLoad: function () {
