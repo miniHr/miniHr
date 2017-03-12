@@ -1,8 +1,8 @@
 <!--应聘者页面-->
 <view class="container">
-    <view wx:for="{{typesOfJobs}}" wx:for-item="typesOfJob" id="{{typesOfJob.id}}" class="item" style="right:{{typesOfJob.right}}px"
+    <view wx:for="{{typeOfJobs}}" wx:for-item="typeOfJob" id="{{typeOfJob.id}}" class="item{{tab[index]?'':' active'}}" data-index="{{index}}" style="right:{{typeOfJob.right}}px"
 bindtap="reachToDetails">
-        <text class="name">{{typesOfJob.name}}</text>
+        <text class="name">{{typeOfJob.name}}</text>
         <image class="arrow" src="/images/arrow.png"></image>
     </view>
 </view>

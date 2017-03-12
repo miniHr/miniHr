@@ -1,4 +1,4 @@
-/* pages/applicant/applicant.wxss */
+/* pages/applicant/list/list.wxss */
 .container{
   padding-top: 0;
 }
@@ -9,6 +9,22 @@
     position: relative; 
     display: flex;
     margin-top: 0rpx;
+}
+
+.active{
+  height: 550rpx;
+}
+
+.active .name{
+  height: 55rpx;
+}
+
+.active image{
+    transform: rotate(90deg);
+    width:40rpx;
+    height:40rpx;
+    margin: 50rpx 50rpx 50rpx 30rpx;
+    background-repeat:no-repeat;
 }
 
 .name{
@@ -47,4 +63,3 @@
   background-repeat:no-repeat;
   margin: 50rpx 50rpx 50rpx 30rpx;
 }
-
