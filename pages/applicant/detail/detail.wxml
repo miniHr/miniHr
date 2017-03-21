@@ -1,0 +1,17 @@
+<!--企业展位信息-->
+<view class="container head">
+    <view class="detail company">
+        <text class="type">公司</text>
+    </view>
+    <view class="detail job">
+        <text class="type">职位</text>
+    </view>
+    <view class="detail position">
+        <text class="type">展位号</text>
+    </view>
+</view>
+
+<view class="container content">
+    <view>美的</view>
+    <view>客服专员</view>
+</view>

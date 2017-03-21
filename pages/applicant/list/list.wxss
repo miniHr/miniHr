@@ -11,29 +11,16 @@
     margin-top: 0rpx;
 }
 
-.active{
-  height: 550rpx;
-}
-
-.active .name{
-  height: 55rpx;
-}
-
-.active image{
-    transform: rotate(90deg);
-    width:40rpx;
-    height:40rpx;
-    margin: 50rpx 50rpx 50rpx 30rpx;
-    background-repeat:no-repeat;
+.hide{
+  display: none;
 }
 
 .name{
-    margin: 50rpx 10rpx 50rpx 10rpx;
-    font-size: 50rpx;
+    margin: 40rpx 10rpx 50rpx 10rpx;
+    font-size: 40rpx;
     overflow: hidden;
     flex: 1;
     padding-left: 300rpx;
-    color:#F8F8FF;
 }
 
 #type1{
@@ -56,10 +43,14 @@
   background-color: #008080;
 }
 
-.arrow{
+image{
   background: none;
   width:40rpx;
   height:40rpx;
   background-repeat:no-repeat;
   margin: 50rpx 50rpx 50rpx 30rpx;
+}
+
+.yes{
+  transform: rotate(90deg);
 }
