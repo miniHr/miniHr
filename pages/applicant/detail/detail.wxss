@@ -29,3 +29,32 @@
 .content{
     flex-direction:column;
 }
+
+image{
+   width:128rpx;
+   height:128rpx;
+   margin:50rpx;
+   border-radius:50%;
+}
+
+.title{
+    font-size: 33rpx;
+    color:#000;
+    margin-top: 5rpx;
+    padding:0 4rem 0 15px;
+    text-align: center;
+}
+
+.tag{
+    font-size:25rpx;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+
+.exhibition{
+    padding:0 0.2rem 0 5px;
+    width: 15%;
+}

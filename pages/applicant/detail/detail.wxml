@@ -11,7 +11,11 @@
     </view>
 </view>
 
-<view class="container content">
-    <view>美的</view>
-    <view>客服专员</view>
+<view class="container head">
+    <image src="/images/midea.png" background-size="cover"></image>
+    <view class="content">
+        <text class="title">美的</text>
+        <text class="tag">客服专员</text>
+    </view>
+    <view class="exhibition">A12</view>
 </view>
