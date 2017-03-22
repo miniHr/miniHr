@@ -1,17 +1,34 @@
 // pages/applicant/detail/detail.js
 Page({
-  data:{},
+  data:{
+    hidden:true,
+    jobInfo:[]
+  },
   onPullDownRefresh:function(){
     wx.stopPullDownRefresh();
   },
   onLoad:function(options){
+    var that=this;
+    var jobType=options.jobType;
     wx.request({
-      url: 'https://localhost:8080/hello',
-      data: {},
-      method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      url: 'https://561job.cn/query/'+jobType,
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       success: function(res){
-        console.log(res.data);
+        if(200!=res.statusCode){
+          that.setData({
+            hidden:false
+          });
+        }else{
+          that.setData({
+            jobInfo:res.data
+          })
+        }
       }
+    })
+  },
+  confirm:function(){
+    this.setData({
+      hidden:true
     })
   }
 })

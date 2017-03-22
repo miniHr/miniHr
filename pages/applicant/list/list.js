@@ -4,12 +4,12 @@ Page({
     typeOfJobs:[
       {"id":"type1","name":"普工","right":0},
       {"id":"type2","name":"文职","right":0},
-      {"id":"admin","name":"人事","right":0},
-      {"id":"clerk","name":"行政","right":0},
-      {"id":"service","name":"客服","right":0},
-      {"id":"type3","name":"销售","right":0},
-      {"id":"type4","name":"技工","right":0},
-      {"id":"type5","name":"其他","right":0},
+      {"id":"type3","name":"人事","right":0},
+      {"id":"type4","name":"行政","right":0},
+      {"id":"type5","name":"客服","right":0},
+      {"id":"type6","name":"销售","right":0},
+      {"id":"type7","name":"技工","right":0},
+      {"id":"type8","name":"其他","right":0},
     ],
     tab:['','',' hide',' hide',' hide','','',''],
     isImage:['show','show','hide','hide','hide','show','show','show'],
@@ -32,8 +32,9 @@ Page({
                 });
       }
     }else{
+      id=id.substring(4);
       wx.navigateTo({
-        url: '../detail/detail'
+        url: '../detail/detail?jobType='+id
       })
     }
   }
