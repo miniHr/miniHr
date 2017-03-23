@@ -11,13 +11,13 @@
     </view>
 </view>
 
-<view class="container head">
+<view class="container head" wx:for="{{jobInfo}}" wx:for-item="job" id="job.id">
     <image src="/images/midea.png" background-size="cover"></image>
     <view class="content">
-        <text class="title">美的</text>
-        <text class="tag">客服专员</text>
+        <text class="title">{{job.name}}</text>
+        <text class="tag">{{job.job}}</text>
     </view>
-    <view class="exhibition">A12</view>
+    <view class="exhibition">{{job.position}}</view>
 </view>
 
 <modal hidden="{{hidden}}" title="出现异常！" confirm-text="确定" bindconfirm="confirm" no-cancel="true">
