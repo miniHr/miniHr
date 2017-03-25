@@ -8,7 +8,7 @@ Page({
   onPullDownRefresh:function(){
      var that=this;
     wx.request({
-      url: 'https://561job.cn/'+this.data.jobType,
+      url: 'https://561job.cn/query/'+this.data.jobType,
       data: {},
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: {}, // 设置请求的 header
