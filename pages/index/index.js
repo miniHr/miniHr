@@ -10,13 +10,13 @@ Page({
   bindViewTap: function(e) {
     var id=e.currentTarget.id;
     if(id=='applicant'){
-      wx.navigateTo({
-      url: '../applicant/list/list'
-    })
+     wx.redirectTo({
+       url: '../applicant/list/list'
+     })
     }else{
-    wx.navigateTo({
-      url: '../enterprise/detail/detail'
-    })
+      wx.redirectTo({
+        url: '../enterprise/detail/detail'
+      })
     }
   },
   onLoad: function () {

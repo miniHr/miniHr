@@ -1,1 +1,49 @@
 /* pages/enterprise/detail/detail.wxss */
+.container{
+    padding-top: 0;
+}
+
+.statistic{
+    width: 100%;
+    height: 150rpx;
+    position: relative; 
+    display: flex;
+    margin-top: 0rpx;
+}
+
+.name{
+    margin: 60rpx 10rpx 50rpx 10rpx;
+    font-size: 40rpx;
+    overflow: hidden;
+    flex: 1;
+    padding-left: 100rpx;
+}
+
+#type0{
+  background-color: #4682B4;
+}
+
+#type1{
+  background-color: #5F9EA0;
+}
+
+#type2{
+  background-color: #87CEFA;
+}
+
+#type3{
+  background-color: #00CED1;
+}
+
+#type4{
+  background-color: #40E0D0;
+}
+
+.result{
+  background: none;
+  width:40rpx;
+  height:40rpx;
+  background-repeat:no-repeat;
+  margin: 60rpx 50rpx 50rpx 30rpx;
+  padding-right: 100rpx;
+}

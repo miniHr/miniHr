@@ -1,3 +1,4 @@
 {
-    "navigationBarTitleText": "XXXXX大型招聘会"
+    "navigationBarTitleText": "意向求职人数",
+    "enablePullDownRefresh":true
 }

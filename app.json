@@ -3,7 +3,6 @@
     "pages/index/index",
     "pages/applicant/list/list",
     "pages/applicant/detail/detail",
-    "pages/enterprise/list/list",
     "pages/enterprise/detail/detail"
   ]
 }

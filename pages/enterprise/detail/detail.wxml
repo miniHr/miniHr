@@ -1,2 +1,7 @@
 <!--pages/enterprise/detail/detail.wxml-->
-<text>pages/enterprise/detail/detail.wxml</text>
+<view class="container">
+    <view class="statistic" wx:for="{{names}}" wx:for-item="name" data-index="{{index}}" id="type{{index}}">
+        <text class="name">{{name}}</text>
+        <text class="result">{{result[index]}}</text>
+</view>
+</view>

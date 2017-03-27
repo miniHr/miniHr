@@ -1,19 +1,12 @@
 // pages/enterprise/detail/detail.js
 Page({
-  data:{},
+  data:{
+    names:['普工','文职','销售','技工','其他'],
+    result:['100','100','100','100','100']
+  },
   onLoad:function(options){
-    // 页面初始化 options为页面跳转所带来的参数
+      
   },
-  onReady:function(){
-    // 页面渲染完成
-  },
-  onShow:function(){
-    // 页面显示
-  },
-  onHide:function(){
-    // 页面隐藏
-  },
-  onUnload:function(){
-    // 页面关闭
+  onPullDownRefresh:function(){
   }
 })
