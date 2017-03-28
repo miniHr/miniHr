@@ -14,9 +14,11 @@ Page({
     tab:['','',' hide',' hide',' hide','','',''],
     isImage:['show','show','hide','hide','hide','show','show','show'],
     rotation:['','','','','','','',''],
-    colors:['#F8F8FF','#F8F8FF','#87CEFA','#5F9EA0','#00FFFF','#F8F8FF','#F8F8FF','#F8F8FF']
+    colors:['#F8F8FF','#F8F8FF','#87CEFA','#5F9EA0','#00FFFF','#F8F8FF','#F8F8FF','#F8F8FF'],
+    hidden:true
   },
   reachToDetails:function(e){
+    var that=this;
     var id=e.currentTarget.id;
     var tab=this.data.tab;
     if('type2'==id){
@@ -33,9 +35,33 @@ Page({
       }
     }else{
       id=id.substring(4);
-      wx.navigateTo({
-        url: '../detail/detail?jobType='+id
+      var item=id=='3'||id=='4'||id=='5'?'2':id;
+      wx.request({
+        url: 'https://561job.cn/insert/'+item,
+        data: {},
+        method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+        success: function(res){
+          if(200!=res.statusCode){
+          that.setData({
+            hidden:false
+          });
+          }else{
+          wx.navigateTo({
+            url: '../detail/detail?jobType='+id
+          })
+        }
+        },
+        fail: function() {
+          that.setData({
+            hidden:false
+          });
+        }
       })
     }
+  },
+  confirm:function(){
+    this.setData({
+      hidden:true
+    })
   }
 })

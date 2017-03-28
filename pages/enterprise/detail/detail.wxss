@@ -12,7 +12,7 @@
 }
 
 .name{
-    margin: 60rpx 10rpx 50rpx 10rpx;
+    margin: 50rpx 10rpx 50rpx 10rpx;
     font-size: 40rpx;
     overflow: hidden;
     flex: 1;

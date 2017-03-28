@@ -5,3 +5,7 @@
         <text class="result">{{result[index]}}</text>
 </view>
 </view>
+
+<modal hidden="{{hidden}}" title="出现异常！" confirm-text="确定" bindconfirm="confirm" no-cancel="true">
+    出了点小差错！
+</modal>
