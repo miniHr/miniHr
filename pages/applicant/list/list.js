@@ -10,13 +10,13 @@ Page({
       {"id":"type6","name":"策划设计","right":0},
       {"id":"type7","name":"销售","right":0},
       {"id":"type8","name":"技工","right":0},
-      {"id":"type9","name":"其他","right":0},
+      {"id":"type9","name":"管理","right":0},
+      {"id":"type10","name":"其他","right":0},
     ],
-    tab:['','',' hide',' hide',' hide',' hide','','',''],
-    isImage:['show','show','hide','hide','hide','hide','show','show','show'],
-    rotation:['','','','','','','','',''],
-    colors:['#F8F8FF','#F8F8FF','#F8F8FF','#F8F8FF','#F8F8FF','#F8F8FF','#F8F8FF','#F8F8FF','#F8F8FF'],
-    hidden:true
+    tab:['','',' hide',' hide',' hide',' hide','','','',''],
+    isImage:['show','show','hide','hide','hide','hide','show','show','show','show'],
+    hidden:true,
+    imageSrc:"/images/arrow1.png"
   },
   reachToDetails:function(e){
     var that=this;
@@ -25,14 +25,15 @@ Page({
     if('type2'==id){
       if(tab[2]==' hide'){
       this.setData({
-                    tab:['','','','','','','','',''],
-                rotation:['','yes','','','','','','','']    
+                    tab:['','','','','','','','','',''],
+                    imageSrc:"/images/arrow2.png"    
                 });
       }else{
          this.setData({
-                    tab:['','',' hide',' hide',' hide',' hide','','',''],
-                    rotation:['','','','','','','','','']
+                    tab:['','',' hide',' hide',' hide',' hide','','','',''],
+                    imageSrc:"/images/arrow1.png"
                 });
+         
       }
     }else{
       id=id.substring(4);

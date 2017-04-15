@@ -5,7 +5,7 @@
 
 .item{
     width: 100%;
-    height: 200rpx;
+    height: 240rpx;
     position: relative; 
     display: flex;
     margin-top: 0rpx;
@@ -16,12 +16,13 @@
 }
 
 .name{
-    margin: 40rpx 10rpx 50rpx 10rpx;
-    font-size: 40rpx;
-    overflow: hidden;
-    flex: 1;
-    padding-left: 300rpx;
+    width:94.5%;
+    height: 240rpx;
+    font-size: 60rpx;
     font-weight:bolder;
+    text-align:center;
+    line-height: 240rpx;
+    color:#FFFFFF;
 }
 
 #type1{
@@ -60,14 +61,13 @@
   background-color: #8acda4;
 }
 
-image{
-  background: none;
-  width:40rpx;
-  height:40rpx;
-  background-repeat:no-repeat;
-  margin: 50rpx 50rpx 50rpx 30rpx;
+#type10{
+  background-color: #8acda4;
 }
 
-.yes{
-  transform: rotate(90deg);
+image{
+  background: none;
+  width:20px;height:20px;
+  background-repeat:no-repeat;
+  padding-top: 50px;
 }

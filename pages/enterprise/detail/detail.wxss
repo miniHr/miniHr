@@ -5,18 +5,19 @@
 
 .statistic{
     width: 100%;
-    height: 150rpx;
-    position: relative; 
+    height: 240rpx;
+    position: relative;
     display: flex;
     margin-top: 0rpx;
+    flex-direction: row;
 }
 
 .name{
-    margin: 50rpx 10rpx 50rpx 10rpx;
-    font-size: 40rpx;
-    overflow: hidden;
-    flex: 1;
-    padding-left: 100rpx;
+    width:50%;
+    font-size: 50rpx;
+    font-weight:900;
+    text-align: center;
+    line-height: 120px;
 }
 
 #type0{
@@ -40,10 +41,9 @@
 }
 
 .result{
-  background: none;
-  width:40rpx;
-  height:40rpx;
-  background-repeat:no-repeat;
-  margin: 60rpx 50rpx 50rpx 30rpx;
-  padding-right: 100rpx;
+  width:50%;
+  font-weight:900;
+  font-size: 50rpx;
+  text-align: center;
+  line-height: 120px;
 }
