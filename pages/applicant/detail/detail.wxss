@@ -58,3 +58,15 @@ image{
     padding:0 0.2rem 0 5px;
     width: 15%;
 }
+
+.company{
+    background-color: #7c92cb;
+}
+
+.job{
+    background-color: #5cc6b8;
+}
+
+.position{
+    background-color: #02b8cd;
+}

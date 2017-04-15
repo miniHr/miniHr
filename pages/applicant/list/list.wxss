@@ -24,23 +24,39 @@
 }
 
 #type1{
-  background-color: #20B2AA;
+  background-color: #4282a6;
 }
 
 #type2{
-  background-color: #32CD32;
+  background-color: #239db5;
+}
+
+#type3{
+  background-color: #5cc6b8;
+}
+
+#type4{
+  background-color: #7c92cb;
+}
+
+#type5{
+  background-color: #cae08e;
 }
 
 #type6{
-  background-color: #4169E1;
+  background-color: #02b8cd;
 }
 
 #type7{
-  background-color: #191970;
+  background-color: #67c7bc;
 }
 
 #type8{
-  background-color: #008080;
+  background-color: #8acda4;
+}
+
+#type9{
+  background-color: #8acda4;
 }
 
 image{
