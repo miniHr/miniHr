@@ -5,7 +5,7 @@
 
 .item{
     width: 100%;
-    height: 150rpx;
+    height: 200rpx;
     position: relative; 
     display: flex;
     margin-top: 0rpx;
@@ -21,6 +21,7 @@
     overflow: hidden;
     flex: 1;
     padding-left: 300rpx;
+    font-weight:bolder;
 }
 
 #type1{

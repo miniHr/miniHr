@@ -1,23 +1,19 @@
 <!--企业展位信息-->
-<view class="container head">
-    <view class="detail company">
-        <text class="type">公司</text>
-    </view>
-    <view class="detail job">
-        <text class="type">职位</text>
-    </view>
-    <view class="detail position">
-        <text class="type">展位号</text>
-    </view>
+<view class="content1">
+        <view class="company">公司</view>
+        <view class="job">职位</view>
+        <view class="position">展位号</view>
 </view>
 
-<view class="container head" wx:for="{{jobInfo}}" wx:for-item="job" id="job.id">
-    <image src="/images/midea.png" background-size="cover"></image>
-    <view class="content">
-        <text class="title">{{job.name}}</text>
-        <text class="tag">{{job.job}}</text>
+<view class="content2" wx:for="{{jobInfo}}" wx:for-item="job" id="{{job.id}}">
+    <view class="detail">
+        <image src="/images/midea.png" background-size="cover"></image>
+        <view class="text">
+            <view class="title">{{job.job}}</view>
+            <view class="tag">{{job.name}}</view>
+        </view>
+        <view class="exhibition">{{job.position}}</view>
     </view>
-    <view class="exhibition">{{job.position}}</view>
 </view>
 
 <modal hidden="{{hidden}}" title="出现异常！" confirm-text="确定" bindconfirm="confirm" no-cancel="true">

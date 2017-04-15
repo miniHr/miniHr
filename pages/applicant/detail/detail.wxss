@@ -1,72 +1,84 @@
 /* pages/applicant/detail/detail.wxss */
-.container{ 
+.content1{ 
    padding-top: 0;
+   display: flex;
+   flex-direction: row;
 }
 
-.head{
-    flex-direction:row;
-}
-
-.detail{
-    position: relative; 
-    display: flex;
-    margin-top: 0rpx;
-    width: 50%
-}
-
-.type{
-    font-size: 40rpx;
-    overflow: hidden;
-    margin: 10rpx 0rpx 10rpx 40rpx;
-    padding: 10rpx 0rpx 10rpx 40rpx;
-    border: 10rpx 0rpx 10rpx 40rpx;
-    text-align: right;
-    color: transparent;
-    -webkit-text-stroke: 1px black;
-    letter-spacing: 0.04em;
-}
-
-.content{
-    flex-direction:column;
-}
-
-image{
-   width:128rpx;
-   height:128rpx;
-   margin:50rpx;
-   border-radius:50%;
-}
-
-.title{
-    font-size: 33rpx;
-    color:#000;
-    margin-top: 5rpx;
-    padding:0 4rem 0 15px;
-    text-align: center;
-}
-
-.tag{
-    font-size:25rpx;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    display: block;
-    text-align: center;
-}
-
-.exhibition{
-    padding:0 0.2rem 0 5px;
-    width: 15%;
+.content2{ 
+   padding-top: 0;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-color: #F8F8FF
 }
 
 .company{
     background-color: #7c92cb;
+    width: 33%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    font-weight:bolder;
 }
 
 .job{
     background-color: #5cc6b8;
+    width: 66%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    font-weight:bolder;
 }
 
 .position{
     background-color: #02b8cd;
+    width: 33%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+    font-weight:bolder;
+}
+
+.detail{
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    flex-direction: column;
+    margin: 40rpx;
+    width: 60%;
+    margin-top: 30px;
+}
+
+.title{
+   font-weight:bolder;
+   color: #000000;
+   font-size: 14px;
+}
+
+.tag{
+   color: #000000;
+   font-size: 12px;
+}
+
+.exhibition{
+   width: 33%;
+   line-height: 75px;
+   text-align: center;
+}
+
+image{
+   width:130rpx;
+   height:128rpx;
+   margin:40rpx;
+   border-radius:60%;
 }
