@@ -3,7 +3,7 @@
     <view wx:for="{{typeOfJobs}}" wx:for-item="typeOfJob" id="{{typeOfJob.id}}" class="item{{tab[index]}}" data-index="{{index}}" style="right:{{typeOfJob.right}}px"
 bindtap="reachToDetails">
         <view class="name">{{typeOfJob.name}}</view>
-        <image class="{{isImage[index]}}" src="{{imageSrc}}"></image>
+        <image class="{{isImage[index]}}" src="{{imageSrc[index]}}"></image>
     </view>
 </view>
 

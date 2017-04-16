@@ -16,7 +16,8 @@ Page({
     tab:['','',' hide',' hide',' hide',' hide','','','',''],
     isImage:['show','show','hide','hide','hide','hide','show','show','show','show'],
     hidden:true,
-    imageSrc:"/images/arrow1.png"
+    imageSrc:["/images/arrow1.png","/images/arrow1.png","","","","","/images/arrow1.png","/images/arrow1.png",
+"/images/arrow1.png","/images/arrow1.png"]
   },
   reachToDetails:function(e){
     var that=this;
@@ -26,12 +27,14 @@ Page({
       if(tab[2]==' hide'){
       this.setData({
                     tab:['','','','','','','','','',''],
-                    imageSrc:"/images/arrow2.png"    
+                    imageSrc:["/images/arrow1.png","/images/arrow2.png","","","","","/images/arrow1.png","/images/arrow1.png",
+"/images/arrow1.png","/images/arrow1.png"]    
                 });
       }else{
          this.setData({
                     tab:['','',' hide',' hide',' hide',' hide','','','',''],
-                    imageSrc:"/images/arrow1.png"
+                    imageSrc:["/images/arrow1.png","/images/arrow1.png","","","","","/images/arrow1.png","/images/arrow1.png",
+"/images/arrow1.png","/images/arrow1.png"]
                 });
          
       }
