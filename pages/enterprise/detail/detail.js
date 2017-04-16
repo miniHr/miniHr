@@ -1,7 +1,7 @@
 // pages/enterprise/detail/detail.js
 Page({
   data:{
-    names:['普工','文职','销售','技工','其他'],
+    names:['普工','文职','销售','技工','管理','其他'],
     result:[],
     hidden:true
   },

@@ -40,6 +40,10 @@
   background-color: #8acda4;
 }
 
+#type5{
+  background-color: #8acda4;
+}
+
 .result{
   width:50%;
   font-weight:900;
