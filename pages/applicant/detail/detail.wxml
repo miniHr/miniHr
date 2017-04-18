@@ -7,7 +7,7 @@
 
 <view class="content2" wx:for="{{jobInfo}}" wx:for-item="job" id="{{job.id}}">
     <view class="detail">
-        <image src="/images/enterprise.png" background-size="cover"></image>
+        <image src="/images/company/{{job.image}}" background-size="cover"></image>
         <view class="text">
             <view class="title">{{job.job}}</view>
             <view class="tag">{{job.name}}</view>

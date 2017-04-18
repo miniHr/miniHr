@@ -60,6 +60,7 @@
     margin: 40rpx;
     width: 60%;
     margin-top: 30px;
+    margin-left: 10px;
 }
 
 .title{
@@ -75,13 +76,12 @@
 
 .exhibition{
    width: 33%;
-   line-height: 75px;
+   line-height: 90px;
    text-align: center;
 }
 
 image{
-   width:130rpx;
-   height:128rpx;
-   margin:40rpx;
-   border-radius:60%;
+   width:220rpx;
+   height:160rpx;
+   margin:10rpx;
 }
