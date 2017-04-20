@@ -1,12 +1,12 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo" id="applicant">
-    <image class="userinfo-avatar" src="/images/applicant.png" background-size="cover"></image>
-  </view>
-   <view  bindtap="bindViewTap" class="userinfo" id="enterprise">
-    <image class="userinfo-avatar" src="/images/enterprise.png" background-size="cover"></image>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+    <view wx:for="{{typeOfJobs}}" wx:for-item="typeOfJob" id="{{typeOfJob.id}}" class="item{{tab[index]}}" data-index="{{index}}" style="right:{{typeOfJob.right}}px"
+bindtap="reachToDetails">
+        <view class="name">{{typeOfJob.name}}</view>
+        <image class="{{isImage[index]}}" src="{{imageSrc[index]}}"></image>
+    </view>
 </view>
+
+<modal hidden="{{hidden}}" title="出现异常！" confirm-text="确定" bindconfirm="confirm" no-cancel="true">
+    出了点小差错！
+</modal>
