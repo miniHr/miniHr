@@ -2,7 +2,7 @@
 <view class="content1">
         <view class="company">公司</view>
         <view class="job">职位</view>
-        <view class="position">展位号</view>
+        <view class="position">工资</view>
 </view>
 
 <view class="content2" wx:for="{{jobInfo}}" wx:for-item="job" id="{{job.id}}">
