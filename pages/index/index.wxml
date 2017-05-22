@@ -1,12 +1,9 @@
-<!--index.wxml-->
-<view class="container">
-    <view wx:for="{{typeOfJobs}}" wx:for-item="typeOfJob" id="{{typeOfJob.id}}" class="item{{tab[index]}}" data-index="{{index}}" style="right:{{typeOfJob.right}}px"
-bindtap="reachToDetails">
-        <view class="name">{{typeOfJob.name}}</view>
-        <image class="{{isImage[index]}}" src="{{imageSrc[index]}}"></image>
-    </view>
+<view class="view1">
+  <text class="test1">“您想”</text>
+  <button class="button1" hover-class="button-hover" size="default" type="default" id="2" bindtap="toNext">
+    找工作
+  </button>
+  <button class="button2" hover-class="button-hover" size="default" type="default" id="1" bindtap="toNext">
+    找人才
+  </button>
 </view>
-
-<modal hidden="{{hidden}}" title="出现异常！" confirm-text="确定" bindconfirm="confirm" no-cancel="true">
-    出了点小差错！
-</modal>

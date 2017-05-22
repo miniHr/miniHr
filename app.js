@@ -1,31 +1,42 @@
-﻿//app.js
-//
-App({
-  onLaunch: function () {
-    //调用API从本地缓存中获取数据
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+﻿App({
+  globalData: {
+    appid: "wxe79c9076ceb26a59",
+    secret: "f9d46de2cbf0c637d67510ccee67d218",
+    userInfo: null,
+    sessionKey: null,
+    openId: null
   },
-  getUserInfo:function(cb){
+  onLaunch() {
     var that = this
-    if(this.globalData.userInfo){
-      typeof cb == "function" && cb(this.globalData.userInfo)
-    }else{
-      //调用登录接口
-      wx.login({
-        success: function () {
-          wx.getUserInfo({
-            success: function (res) {
-              that.globalData.userInfo = res.userInfo
-              typeof cb == "function" && cb(that.globalData.userInfo)
-            }
-          })
+    var user = wx.getStorageSync('user') || {};
+    var info = wx.getStorageSync('userInfo') || {};
+    if ((!user.openid || (user.expires_in || Date.now()) < (Date.now() + 600)) && (!info.nickName)) {
+      wx.login({//登陆接口
+        success: function (res) {
+          if (res.code) {
+            wx.getUserInfo({
+              success: function (response) {
+                wx.setStorageSync('userInfo', response.userInfo);
+                that.globalData.userInfo = response.userInfo;
+              }
+            });
+            var d = that.globalData;
+            var l = 'https://api.weixin.qq.com/sns/jscode2session?appid=' + d.appid + '&secret=' + d.secret + '&js_code=' + res.code + '&grant_type=authorization_code';
+            wx.request({
+              url: l,
+              method: 'GET',
+              success: function (res) {
+                var obj = {};
+                obj.openid = res.data.openid;
+                obj.expires_in = Date.now() + res.data.expires_in;
+                wx.setStorageSync('user', obj);
+                that.globalData.openId = res.data.openid;
+                that.globalData.sessionKey = res.data.session_key;
+              }
+            });
+          } 
         }
       })
     }
-  },
-  globalData:{
-    userInfo:null
   }
 })

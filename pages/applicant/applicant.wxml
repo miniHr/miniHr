@@ -1,0 +1,33 @@
+<view class="view2 {{hide1}}">
+  <text class="test2">“您的性别是”</text>
+  <button class="button4" hover-class="button-hover" size="default" type="default" id="1" bindtap="saveSex">
+    我是女生
+  </button>
+  <button class="button3" hover-class="button-hover" size="default" type="default" id="0" bindtap="saveSex">
+    我是男生
+  </button>
+</view>
+<view class="view2 {{hide2}}">
+  <text class="test2">“您的年龄是”</text>
+  <picker class="picker1" mode="selector" value="{{index}}" range="{{ages}}" bindchange="bindPickerChange1">
+    <button class="button3">{{ages[index]}}</button>
+  </picker>
+</view>
+<view class="view2 {{hide3}}">
+  <text class="test2">“您的工作经验是”</text>
+  <picker class="picker1" mode="selector" value="{{index}}" range="{{industries}}" bindchange="bindPickerChange2">
+    <button class="button3">{{industry}}</button>
+  </picker>
+  <picker class="picker2" mode="selector" value="{{index}}" range="{{worktimes}}" bindchange="bindPickerChange3">
+    <button class="button4">{{worktime}}</button>
+  </picker>
+</view>
+<view class="view2 {{hide4}}">
+  <text class="test2">“您的专业是”</text>
+  <picker class="picker1" mode="selector" value="{{index}}" range="{{educations}}" bindchange="bindPickerChange4">
+    <button class="button3">{{education}}</button>
+  </picker>
+  <picker class="picker2" mode="selector" value="{{index}}" range="{{majors}}" bindchange="bindPickerChange5">
+    <button class="button4">{{major}}</button>
+  </picker>
+</view>

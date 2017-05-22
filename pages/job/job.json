@@ -1,0 +1,8 @@
+{
+    "navigationBarTextStyle":"white",
+    "navigationBarBackgroundColor": "#33cc95",
+    "navigationBarTitleText": "本次招聘会最适合您的工作",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark"
+}

@@ -1,71 +1,98 @@
-//index.js
+
+
+// 获取全局应用程序实例对象
+const app = getApp();
+
+// 创建页面实例对象
 Page({
-  data:{
-    typeOfJobs:[
-      {"id":"type1","name":"普工","right":0},
-      {"id":"type2","name":"文职","right":0},
-      {"id":"type3","name":"人事行政","right":0},
-      {"id":"type4","name":"会计","right":0},
-      {"id":"type5","name":"服务类","right":0},
-      {"id":"type6","name":"策划设计","right":0},
-      {"id":"type7","name":"销售","right":0},
-      {"id":"type8","name":"技工","right":0},
-      {"id":"type9","name":"管理","right":0},
-      {"id":"type10","name":"其他","right":0},
-    ],
-    tab:['','',' hide',' hide',' hide',' hide','','','',''],
-    isImage:['show','show','hide','hide','hide','hide','show','show','show','show'],
-    hidden:true,
-    imageSrc:["/images/arrow1.png","/images/arrow1.png","","","","","/images/arrow1.png","/images/arrow1.png",
-"/images/arrow1.png","/images/arrow1.png"]
+  /**
+   * 页面名称
+   */
+  name: "index",
+  /**
+   * 页面的初始数据
+   */
+
+  data: {
+    userInfo: {}
   },
-  reachToDetails:function(e){
-    var that=this;
-    var id=e.currentTarget.id;
-    var tab=this.data.tab;
-    if('type2'==id){
-      if(tab[2]==' hide'){
-      this.setData({
-                    tab:['','','','','','','','','',''],
-                    imageSrc:["/images/arrow1.png","/images/arrow2.png","","","","","/images/arrow1.png","/images/arrow1.png",
-"/images/arrow1.png","/images/arrow1.png"]    
-                });
-      }else{
-         this.setData({
-                    tab:['','',' hide',' hide',' hide',' hide','','','',''],
-                    imageSrc:["/images/arrow1.png","/images/arrow1.png","","","","","/images/arrow1.png","/images/arrow1.png",
-"/images/arrow1.png","/images/arrow1.png"]
-                });     
-      }
-    }else{
-      id=id.substring(4);
-      var item=id=='3'||id=='4'||id=='5'||id=='6'?'2':id;
-      wx.request({
-        url: 'https://561job.cn/insert/'+item,
-        data: {},
-        method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-        success: function(res){
-          if(200!=res.statusCode){
-          that.setData({
-            hidden:false
-          });
-          }else{
-          wx.navigateTo({
-            url: '/pages/applicant/detail/detail?jobType='+id
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad() {
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
+    wx.request({
+      url: 'https://561job.cn/user/query',
+      data: app.globalData.openId,
+      method: "GET",
+      success: function (res) {
+        if ("1" == res.level) {//个人用户
+          wx.redirectTo({
+            url: '',
+          })
+        } else {//企业用户
+          wx.redirectTo({
+            url: '',
           })
         }
-        },
-        fail: function() {
-          that.setData({
-            hidden:false
-          });
-        }
+      },
+      fail: function (res) {
+        console.log('submit fail');
+      },
+      complete: function (res) {
+        console.log('submit complete');
+      }
+    })
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload() {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh() {
+
+  },
+
+
+  //以下为自定义点击事件
+  toNext: function (e) {
+    var that = this;
+    var id = e.currentTarget.id;
+    if (id == '1') {//个人用户
+      wx.redirectTo({
+        url: '../applicant/applicant?id=' + id
+      })
+    } else {
+      wx.redirectTo({//企业用户
+        url: '../applicant/applicant?id=' + id
       })
     }
-  },
-  confirm:function(){
-    this.setData({
-      hidden:true
-    })
   }
 })
+

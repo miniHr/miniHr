@@ -1,7 +1,22 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/applicant/detail/detail",
-    "pages/enterprise/detail/detail"
-  ]
+  "debug": true, 
+  "window": {
+    "navigationBarTextStyle": "black", 
+    "navigationBarBackgroundColor": "#dcdcdc", 
+    "navigationBarTitleText": "", 
+    "backgroundColor": "#ffffff", 
+    "enablePullDownRefresh": false, 
+    "backgroundTextStyle": "dark"
+  }, 
+  "pages": [
+    "page/index/index", 
+    "page/applicant/applicant",
+    "page/job/job"
+  ], 
+  "networkTimeout": {
+    "connectSocket": "", 
+    "request": "", 
+    "downloadFile": "", 
+    "uploadFile": ""
+  }
 }
