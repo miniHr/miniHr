@@ -9,9 +9,9 @@
     "backgroundTextStyle": "dark"
   }, 
   "pages": [
-    "page/index/index", 
-    "page/applicant/applicant",
-    "page/job/job"
+    "pages/index/index", 
+    "pages/applicant/applicant",
+    "pages/job/job"
   ], 
   "networkTimeout": {
     "connectSocket": "", 
