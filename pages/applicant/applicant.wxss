@@ -1,5 +1,5 @@
 page { 
-    background-color: rgba(220,220,220,1);  
+    background-color: #FFFFFF;  
 }
 
 .hide{

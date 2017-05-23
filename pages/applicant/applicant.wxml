@@ -10,24 +10,24 @@
 <view class="view2 {{hide2}}">
   <text class="test2">“您的年龄是”</text>
   <picker class="picker1" mode="selector" value="{{index}}" range="{{ages}}" bindchange="bindPickerChange1">
-    <button class="button3">{{ages[index]}}</button>
+    <button class="button4">{{ages[index]}}</button>
   </picker>
 </view>
 <view class="view2 {{hide3}}">
   <text class="test2">“您的工作经验是”</text>
   <picker class="picker1" mode="selector" value="{{index}}" range="{{industries}}" bindchange="bindPickerChange2">
-    <button class="button3">{{industry}}</button>
+    <button class="button4">{{industry}}</button>
   </picker>
   <picker class="picker2" mode="selector" value="{{index}}" range="{{worktimes}}" bindchange="bindPickerChange3">
-    <button class="button4">{{worktime}}</button>
+    <button class="button3">{{worktime}}</button>
   </picker>
 </view>
 <view class="view2 {{hide4}}">
   <text class="test2">“您的专业是”</text>
   <picker class="picker1" mode="selector" value="{{index}}" range="{{educations}}" bindchange="bindPickerChange4">
-    <button class="button3">{{education}}</button>
+    <button class="button4">{{education}}</button>
   </picker>
   <picker class="picker2" mode="selector" value="{{index}}" range="{{majors}}" bindchange="bindPickerChange5">
-    <button class="button4">{{major}}</button>
+    <button class="button3">{{major}}</button>
   </picker>
 </view>

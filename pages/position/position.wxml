@@ -1,0 +1,12 @@
+<view class="view6" >
+    <image class="image2"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/55d122e1e0703553421bd7ddfe26c9dd_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/55d122e1e0703553421bd7ddfe26c9dd_origin.png); "/>
+    <text class="text8" >可预定</text>
+    <image class="image3"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png); "/>
+    <text class="text8" >已选</text>
+    <image class="image4"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png); "/>
+    <text class="text8" >已预定</text>
+</view>
+<view class="c-minheight wx-view_8ING0v" />
+<button class="button5"  hover-class="button-hover" size="default" type="default">
+    预定展位
+</button>

@@ -65,7 +65,7 @@ checkbox-group, radio-group {
 /* 自定义样式 */
 
 .page1 {
-  background-color: rgba(220, 220, 220, 1);
+  background-color: #fff;
 }
 
 .view1 {
@@ -89,13 +89,12 @@ checkbox-group, radio-group {
   border-top-right-radius: 90px;
   border-top-left-radius: 90px;
   margin-bottom: 18px;
-  border-color: rgb(64, 224, 208);
   border-style: none;
   padding-top: 0px;
   padding-right: 14px;
   padding-bottom: 0px;
   font-size: 20px;
-  background-color: rgb(9, 156, 142) !important;
+  background-color: #56c2b5 !important;
   color: rgb(255, 255, 255) !important;
 }
 
@@ -108,7 +107,8 @@ checkbox-group, radio-group {
   border-top-left-radius: 90px;
   margin-top: 10px;
   font-size: 20px;
-  background-color: rgb(214, 15, 158) !important;
+  border-style: none;
+  background-color: #fb9fa4 !important;
   color: rgb(255, 255, 255) !important;
 }
 
@@ -139,7 +139,7 @@ checkbox-group, radio-group {
   border-top-right-radius: 90px;
   border-top-left-radius: 90px;
   font-size: 20px;
-  background-color: rgb(222, 100, 217) !important;
+  background-color: #56c2b5 !important;
   color: rgb(255, 255, 255) !important;
 }
 
@@ -152,7 +152,7 @@ checkbox-group, radio-group {
   border-top-right-radius: 90px;
   border-top-left-radius: 90px;
   font-size: 20px;
-  background-color: rgb(8, 189, 47) !important;
+  background-color: #fb9fa4 !important;
   color: rgb(255, 255, 255) !important;
 }
 
@@ -205,9 +205,9 @@ checkbox-group, radio-group {
   width: 130px;
   font-size: 14px;
   font-weight: bolder;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .text5 {
@@ -226,4 +226,46 @@ checkbox-group, radio-group {
 .text7 {
   align-self: center;
   font-weight: bolder;
+}
+
+.view6 {
+  display: flex;
+  width: 375px;
+}
+
+.image2 {
+  height: 15px;
+  width: 15px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.text8 {
+  width: 50px;
+  height: 15px;
+  margin-top: 10px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.image3 {
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+  margin-left: 55px;
+}
+
+.image4 {
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+  margin-left: 55px;
+}
+
+.button5 {
+  width: 250px;
+  border-radius: 90px;
+  height: 45px;
+  color: #fff !important;
+  background-color: rgb(251, 159, 164) !important;
 }

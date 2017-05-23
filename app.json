@@ -2,7 +2,7 @@
   "debug": true, 
   "window": {
     "navigationBarTextStyle": "black", 
-    "navigationBarBackgroundColor": "#dcdcdc", 
+    "navigationBarBackgroundColor": "#FFFFFF", 
     "navigationBarTitleText": "", 
     "backgroundColor": "#ffffff", 
     "enablePullDownRefresh": false, 
@@ -11,7 +11,8 @@
   "pages": [
     "pages/index/index", 
     "pages/applicant/applicant",
-    "pages/job/job"
+    "pages/job/job",
+    "pages/position/position"
   ], 
   "networkTimeout": {
     "connectSocket": "", 
