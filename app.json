@@ -12,7 +12,10 @@
     "pages/index/index", 
     "pages/applicant/applicant",
     "pages/job/job",
-    "pages/position/position"
+    "pages/position/position",
+    "pages/enterpriseInfo/enterpriseInfo",
+    "pages/pay/pay",
+    "pages/ResumeCollected/ResumeCollected"
   ], 
   "networkTimeout": {
     "connectSocket": "", 

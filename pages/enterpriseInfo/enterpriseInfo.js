@@ -8,7 +8,7 @@ Page({
   /**
    * 页面名称
    */
-  name: "position",
+  name: "enterpriseInfo",
   /**
    * 页面的初始数据
    */
@@ -62,9 +62,9 @@ Page({
 
 
   //以下为自定义点击事件
-  confirmBuy:function(){
+  toPay:function(){
     wx.navigateTo({
-      url: '../enterpriseInfo/enterpriseInfo',
+      url: '../pay/pay',
     })
   }
 })

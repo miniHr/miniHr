@@ -8,7 +8,7 @@ Page({
   /**
    * 页面名称
    */
-  name: "position",
+  name: "pay",
   /**
    * 页面的初始数据
    */
@@ -62,9 +62,9 @@ Page({
 
 
   //以下为自定义点击事件
-  confirmBuy:function(){
-    wx.navigateTo({
-      url: '../enterpriseInfo/enterpriseInfo',
+  toWxpayment:function(){
+    wx.redirectTo({
+      url: '../ResumeCollected/ResumeCollected',
     })
   }
 })

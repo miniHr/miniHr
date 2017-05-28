@@ -7,6 +7,6 @@
     <text class="text8" >已预定</text>
 </view>
 <view class="c-minheight wx-view_8ING0v" />
-<button class="button5"  hover-class="button-hover" size="default" type="default">
+<button class="button5"  hover-class="button-hover" size="default" type="default" bindtap="confirmBuy">
     预定展位
 </button>

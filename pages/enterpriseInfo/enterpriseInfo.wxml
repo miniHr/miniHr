@@ -1,0 +1,16 @@
+<view class="view7" >
+    <text class="text9" >“请提供您的企业信息，方便我们尽快联系到您”</text>
+</view>
+<form class="form1" >
+    <view class="view8" >
+        <input class="input1"  name="input1" placeholder="填写企业全称" type="text"/>
+        <input class="input2"  name="input1" placeholder="填写联系电话" type="text"/>
+    </view>
+    <view class="view9" >
+        <image class="image5"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/4ee19b92d9015a874d92fda7ea2fdcfe_origin.jpeg" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/4ee19b92d9015a874d92fda7ea2fdcfe_origin.jpeg); "/>
+        <image class="image6"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/092e3863e4d192b03194ac13fc979995_origin_7yEwufD.jpeg" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/092e3863e4d192b03194ac13fc979995_origin_7yEwufD.jpeg); "/>
+    </view>
+    <button class="button6"  hover-class="button-hover" size="default" type="default" bindtap="toPay">
+        确认
+    </button>
+</form>

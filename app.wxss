@@ -269,3 +269,139 @@ checkbox-group, radio-group {
   color: #fff !important;
   background-color: rgb(251, 159, 164) !important;
 }
+
+.view7 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text9 {
+  font-size: 13px;
+  margin-top: 50px;
+}
+
+.form1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input1 {
+  margin-top: 50px;
+  justify-content: flex-start;
+  text-align: center;
+  width: 250px;
+  height: 93.75rpx;
+  min-height: 75rpx;
+  font-size: 18px;
+  border: 2px solid rgb(251, 159, 164);
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-top-left-radius: 90px;
+  color: rgb(0, 0, 0);
+}
+
+.input2 {
+  text-align: center;
+  margin-top: 15px;
+  width: 250px;
+  height: 93.75rpx;
+  min-height: 75rpx;
+  border: 2px solid rgb(251, 159, 164);
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-top-left-radius: 90px;
+  font-size: 18px;
+}
+
+.button6 {
+  width: 250px;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-top-left-radius: 90px;
+  border-color: rgb(251, 159, 164);
+  border-style: none;
+  height: 45px;
+  margin-top: 50px;
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(251, 159, 164) !important;
+}
+
+.view9 {
+  display: flex;
+}
+
+.image5 {
+  width: 90px;
+  height: 30px;
+  margin-top: 50px;
+  order: -1;
+  margin-right: 70px;
+}
+
+.image6 {
+  width: 90px;
+  height: 30px;
+  margin-top: 50px;
+}
+
+.view10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text10 {
+  margin-top: 155px;
+  font-size: 12px;
+}
+
+.text11 {
+  margin-top: 7px;
+  color: #fb9fa4;
+}
+
+.text12 {
+  margin-top: 15px;
+  font-size: 13px;
+  margin-left: 12px;
+  color: rgb(196, 161, 161);
+}
+
+.button7 {
+  width: 250px;
+  height: 45px;
+  margin-top: 30px;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-top-left-radius: 90px;
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(251, 159, 164, 1) !important;
+}
+
+.page7 {
+  background-color: rgba(247, 247, 247, 1);
+}
+
+.view11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text13 {
+  margin-top: 250px;
+  color: #fb9fa4;
+}
+
+#textId1{
+  margin-top: 0px;
+}
