@@ -21,64 +21,30 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
+    app.getUserInformation();
     wx.request({
       url: 'https://561job.cn/user/query',
-      data: app.globalData.openId,
+      data: wx.getStorageSync('openId'),
       method: "GET",
       success: function (res) {
         if ("1" == res.level) {//个人用户
           wx.redirectTo({
-            url: '',
+            url: '../applicant/applicant',
           })
         } else {//企业用户
           wx.redirectTo({
-            url: '',
+            url: '../ResumeCollected/ResumeCollected',
           })
         }
       },
-      fail: function (res) {
-        console.log('submit fail');
-      },
-      complete: function (res) {
-        console.log('submit complete');
+      fail: function () {
+        wx.showModal({
+          title: '意外',
+          content: '出了点小差错！'
+        })
       }
     })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
 
   //以下为自定义点击事件
   toNext: function (e) {
