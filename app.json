@@ -15,7 +15,8 @@
     "pages/position/position",
     "pages/enterpriseInfo/enterpriseInfo",
     "pages/pay/pay",
-    "pages/ResumeCollected/ResumeCollected"
+    "pages/ResumeCollected/ResumeCollected",
+    "pages/enter/enter"
   ], 
   "networkTimeout": {
     "connectSocket": "", 

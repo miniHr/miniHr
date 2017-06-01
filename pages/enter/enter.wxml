@@ -1,0 +1,9 @@
+<view class="view1">
+  <text class="test1">“您想”</text>
+  <button class="button1" hover-class="button-hover" size="default" type="default" id="2" bindtap="toNext">
+    找工作
+  </button>
+  <button class="button2" hover-class="button-hover" size="default" type="default" id="1" bindtap="toNext">
+    找人才
+  </button>
+</view>
