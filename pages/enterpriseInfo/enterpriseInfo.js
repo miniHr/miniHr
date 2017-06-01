@@ -1,5 +1,3 @@
-
-
 // 获取全局应用程序实例对象
 const app = getApp();
 
@@ -14,16 +12,51 @@ Page({
    */
 
   data: {
-    
-  
-  
+    boothId:'',
+    companyId:'',
+    companyName:'',
+    companyPhone:''
   },
 
-  //以下为自定义点击事件
-  toPay:function(){
-    wx.navigateTo({
-      url: '../pay/pay',
+  onLoad:function(option){
+    var that=this;
+    that.setData({
+      boothId: option.id
+    });
+  },
+
+  insertCompany:function(e){
+    var that = this;
+    var input1=e.detail.value.input1;
+    var input2 = e.detail.value.input1;
+    if(input1==''||input2==''){
+      wx.showModal({
+        title: '提示',
+        content: '请将信息填写完整',
+        showCancel:false
+      })
+    }else{
+      wx.request({
+        url: 'https://561job.cn/company/insert',
+        data:{
+          openId: wx.getStorageSync('openId'),
+
+        }
+      })
+    }
+  },
+
+  showTip:function(){
+    wx.showModal({
+      title: '购买须知',
+      content: '保险公司和无营业执照的公司购买后不提供展位,一家企业最多只能买两个展位',
+      showCancel:false
+    })
+  },
+
+  customService: function () {
+    wx.makePhoneCall({
+      phoneNumber: '13916210164'
     })
   }
 })
-

@@ -139,7 +139,7 @@ checkbox-group, radio-group {
   border-top-right-radius: 90px;
   border-top-left-radius: 90px;
   font-size: 20px;
-  background-color: #56c2b5 !important;
+  background-color: #fb9fa4 !important;
   color: rgb(255, 255, 255) !important;
 }
 
@@ -152,7 +152,7 @@ checkbox-group, radio-group {
   border-top-right-radius: 90px;
   border-top-left-radius: 90px;
   font-size: 20px;
-  background-color: #fb9fa4 !important;
+  background-color: #56c2b5 !important;
   color: rgb(255, 255, 255) !important;
 }
 

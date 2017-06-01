@@ -62,7 +62,7 @@ Page({
   //以下为自定义点击事件
   confirmBuy:function(){
     wx.navigateTo({
-      url: '../enterpriseInfo/enterpriseInfo',
+      url: '../enterpriseInfo/enterpriseInfo?id=1'
     })
   }
 })

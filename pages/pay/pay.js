@@ -14,16 +14,17 @@ Page({
    */
 
   data: {
-    
-  
-  
+    boothId:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad () {
-
+  onLoad: function (option) {
+    var that=this;
+    that.setData({
+      boothId: option.boothId
+    });
   },
 
   /**
@@ -63,9 +64,8 @@ Page({
 
   //以下为自定义点击事件
   toWxpayment:function(){
-    wx.redirectTo({
-      url: '../ResumeCollected/ResumeCollected',
+    wx.request({
+      url: '',
     })
   }
 })
-
