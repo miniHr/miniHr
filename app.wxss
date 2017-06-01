@@ -73,7 +73,7 @@ checkbox-group, radio-group {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 180px;
+  padding-top: 40%;
 }
 
 .test1 {
@@ -121,7 +121,7 @@ checkbox-group, radio-group {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 180px;
+  padding-top: 40%;
 }
 
 .test2 {
