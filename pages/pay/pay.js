@@ -14,7 +14,8 @@ Page({
    */
 
   data: {
-    boothId:''
+    boothId:'',
+    companyId:''
   },
 
   /**
@@ -23,7 +24,8 @@ Page({
   onLoad: function (option) {
     var that=this;
     that.setData({
-      boothId: option.boothId
+      boothId: option.boothId,
+      companyId: option.companyId
     });
   },
 
@@ -64,8 +66,25 @@ Page({
 
   //以下为自定义点击事件
   toWxpayment:function(){
+    var that=this;
     wx.request({
-      url: '',
+      url: 'https://561job.cn/booth/pay',
+      data:{
+        openId: wx.getStorageSync('openId'),
+        boothId: that.data.boothId,
+        companyId: that.data.companyId,
+        amount:'1'
+      },
+      method:'GET',
+      success:function(res){
+        wx.requestPayment({
+          timeStamp: res.data.redirectParamsMap.timeStamp,
+          nonceStr: res.data.redirectParamsMap.nonceStr,
+          package: res.data.redirectParamsMap.package,
+          signType: res.data.redirectParamsMap.signType,
+          paySign: res.data.redirectParamsMap.paySign
+        })
+      }
     })
   }
 })

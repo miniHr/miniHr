@@ -12,10 +12,7 @@ Page({
    */
 
   data: {
-    boothId:'',
-    companyId:'',
-    companyName:'',
-    companyPhone:''
+    boothId:''
   },
 
   onLoad:function(option){
@@ -27,9 +24,9 @@ Page({
 
   insertCompany:function(e){
     var that = this;
-    var input1=e.detail.value.input1;
-    var input2 = e.detail.value.input1;
-    if(input1==''||input2==''){
+    var companyName=e.detail.value.input1;
+    var companyPhone = e.detail.value.input2;
+    if (companyName == '' || companyPhone==''){
       wx.showModal({
         title: '提示',
         content: '请将信息填写完整',
@@ -40,7 +37,22 @@ Page({
         url: 'https://561job.cn/company/insert',
         data:{
           openId: wx.getStorageSync('openId'),
-
+          companyName: companyName,
+          phone: companyPhone,
+          boothId: that.data.boothId
+        },
+        method:'GET',
+        success:function(res){
+          if (res.data.retCode=='00'){
+            wx.navigateTo({
+              url: '../pay/pay?boothId='+that.data.boothId+'&companyId=4',
+            })
+          }else{
+            wx.showModal({
+              title: '意外',
+              content: '出了点小差错！'
+            })
+          }
         }
       })
     }
