@@ -6,7 +6,17 @@
     <image class="image4"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png); "/>
     <text class="text8" >已预定</text>
 </view>
-<view class="c-minheight wx-view_8ING0v" />
+<view class="view12" >
+  <view class="column1">
+    <view id="seat{{8-index}}" wx:for="{{seats1}}" class="seat {{index==1||index==3||index==5?'unique':''}}">{{8-index}}</view>
+  </view>
+  <view class="column2"></view>
+  <view class="column3"></view>
+  <view class="column4"></view>
+  <view class="column5">
+     <view id="seat{{item}}" wx:for="{{seats5}}" class="seat {{item==94||item==96||item==98?'unique':''}}" >{{item}}</view>
+  </view>
+</view>
 <button class="button5"  hover-class="button-hover" size="default" type="default" bindtap="confirmBuy">
     预定展位
 </button>

@@ -14,14 +14,23 @@ Page({
    */
 
   data: {
-    
+    seats1:[1,2,3,4,5,6,7,8],
+    seats2:[],
+    seats5:[93,94,95,96,97,98,99,100]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad () {
-
+    var that=this;
+    var seats2=that.data.seats2;
+    for(var i=0;i<21;i++){
+      seats2[i]=i+1;
+    }
+    that.setData({
+      seats2:seats2
+    })
   },
 
   /**
