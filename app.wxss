@@ -405,3 +405,15 @@ checkbox-group, radio-group {
 #textId1{
   margin-top: 0px;
 }
+
+.image7{
+  width: 375px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.image8{
+  width: 375px;
+  height: 30px;
+  margin-top: 10px;
+}

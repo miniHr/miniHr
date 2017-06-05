@@ -14,76 +14,51 @@ Page({
    */
 
   data: {
-    boothId:'',
-    companyId:''
+    boothId: '',
+    companyId: '',
+    amount: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (option) {
-    var that=this;
+    var that = this;
     that.setData({
       boothId: option.boothId,
-      companyId: option.companyId
+      companyId: option.companyId,
+      amount: option.amt
     });
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow () {
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh () {
-    
-  },
-
-
   //以下为自定义点击事件
-  toWxpayment:function(){
-    var that=this;
+  toWxpayment: function () {
+    var that = this;
     wx.request({
       url: 'https://561job.cn/booth/pay',
-      data:{
+      data: {
         openId: wx.getStorageSync('openId'),
         boothId: that.data.boothId,
         companyId: that.data.companyId,
-        amount:'1'
+        amount: that.data.amount
       },
-      method:'GET',
-      success:function(res){
-        wx.requestPayment({
-          timeStamp: res.data.redirectParamsMap.timeStamp,
-          nonceStr: res.data.redirectParamsMap.nonceStr,
-          package: res.data.redirectParamsMap.package,
-          signType: res.data.redirectParamsMap.signType,
-          paySign: res.data.redirectParamsMap.paySign
-        })
+      method: 'GET',
+      success: function (res) {
+        if ('00' == res.data.retCode) {
+          console.log(res);
+          wx.requestPayment({
+            timeStamp: res.data.retData.redirectParamsMap.timeStamp,
+            nonceStr: res.data.retData.redirectParamsMap.nonceStr,
+            package: res.data.retData.redirectParamsMap.package,
+            signType: res.data.retData.redirectParamsMap.signType,
+            paySign: res.data.retData.redirectParamsMap.paySign
+          })
+        }else{
+          wx.showModal({
+            title: '意外',
+            content: res.data.retData
+          })
+        }
       }
     })
   }

@@ -1,22 +1,36 @@
-<view class="view6" >
-    <image class="image2"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/55d122e1e0703553421bd7ddfe26c9dd_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/55d122e1e0703553421bd7ddfe26c9dd_origin.png); "/>
-    <text class="text8" >可预定</text>
-    <image class="image3"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png); "/>
-    <text class="text8" >已选</text>
-    <image class="image4"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png); "/>
-    <text class="text8" >已预定</text>
+<view class="view6">
+  <image class="image2" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/55d122e1e0703553421bd7ddfe26c9dd_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;"
+  />
+  <text class="text8">可预定</text>
+  <image class="image3" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:   100% 100%; background-position:   0% 0%; background-repeat:   no-repeat;"
+  />
+  <text class="text8">已选</text>
+  <image class="image4" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;"
+  />
+  <text class="text8">已预定</text>
 </view>
-<view class="view12" >
+<view class="view12">
   <view class="column1">
-    <view id="seat{{8-index}}" wx:for="{{seats1}}" class="seat {{index==1||index==3||index==5?'unique':''}}">{{8-index}}</view>
+    <view id="seat{{8-index}}" wx:for="{{seats1}}" class="seat {{index==1||index==3||index==5?'unique':''}} {{change[7-index]}}" bindtap="setToBuy">{{8-index}}</view>
   </view>
-  <view class="column2"></view>
-  <view class="column3"></view>
-  <view class="column4"></view>
+  <view class="column2">
+    <view id="seat{{item}}" wx:for="{{seats2}}" class="seat {{item==15||item==22?'unique':''}} {{change[item-1]}}" bindtap="setToBuy">{{item}}</view>
+  </view>
+  <view class="column3">
+    <view id="seat{{80-item}}" wx:for="{{seats3}}" class="seat {{item==36||item==43?'unique':''}} {{change[79-item]}}" bindtap="setToBuy" >{{80-item}}</view>
+  </view>
+  <view class="column4">
+    <view id="seat{{item}}" wx:for="{{seats4}}" class="seat {{item==57||item==64?'unique':''}} {{change[item-1]}}" bindtap="setToBuy">{{item}}</view>
+  </view>
   <view class="column5">
-     <view id="seat{{item}}" wx:for="{{seats5}}" class="seat {{item==94||item==96||item==98?'unique':''}}" >{{item}}</view>
+    <view id="seat{{164-item}}" wx:for="{{seats5}}" class="seat {{item==85||item==78?'unique':''}} {{change[163-item]}}" bindtap="setToBuy">{{164-item}}</view>
+  </view>
+  <view class="column6">
+    <view id="seat{{item}}" wx:for="{{seats6}}" class="seat {{item==94||item==96||item==98?'unique':''}} {{change[item-1]}}" bindtap="setToBuy">{{item}}</view>
   </view>
 </view>
-<button class="button5"  hover-class="button-hover" size="default" type="default" bindtap="confirmBuy">
-    预定展位
+<image src="../../images/service.png" class="image7"></image>
+<image src="../../images/enter.png" class="image8"></image>
+<button class="button5" hover-class="button-hover" size="default" type="default" bindtap="confirmBuy">
+  预定展位
 </button>

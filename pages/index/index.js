@@ -9,7 +9,6 @@ Page({
     this.getUserInformation();
   },
 
-
   getUserInformation: function () {
     var that = this
     var openid = wx.getStorageSync('openId') || null;
@@ -80,42 +79,43 @@ Page({
   },
 
   goToNextPage: function () {
-    wx.request({
-      url: 'https://561job.cn/user/query',
-      data: {
-        openId: wx.getStorageSync('openId')
-      },
-      method: "GET",
-      success: function (res) {
-        if (res.statusCode == 200) {
-          if (res.data==''){
+    var level = wx.getStorageSync('level') || null;
+    if (level != null) {
+      if (level == '1') {//个人用户
+        wx.redirectTo({
+          url: '../job/job',
+        })
+      } else {
+        wx.redirectTo({
+          url: '../ResumeCollected/ResumeCollected',
+        })
+      }
+    } else {
+      wx.request({
+        url: 'https://561job.cn/user/query',
+        data: {
+          openId: wx.getStorageSync('openId')
+        },
+        method: "GET",
+        success: function (res) {
+          if (res.data.retCode == '01') {
             wx.redirectTo({
-              url: '../enter/enter'
+              url: '../enter/enter',
             })
-          } else {
-            if ("1" == res.data.level) {//个人用户
+          }else{
+            wx.setStorageSync('level', res.data.retData.level);
+            if (res.data.retData.level=='1'){
               wx.redirectTo({
-                url: '../job/job'
+                url: '../../job/job',
               })
-            } else{//企业用户
+            }else{
               wx.redirectTo({
-                url: '../ResumeCollected/ResumeCollected'
+                url: '../ResumeCollected/ResumeCollected',
               })
             }
           }
-        } else {
-          wx.showModal({
-            title: '意外',
-            content: '出了点小差错！'
-          })
         }
-      },
-      fail: function () {
-        wx.showModal({
-          title: '意外',
-          content: '出了点小差错！'
-        })
-      }
-    })
+      })
+    }
   }
 })

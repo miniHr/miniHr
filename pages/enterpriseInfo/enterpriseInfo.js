@@ -12,13 +12,15 @@ Page({
    */
 
   data: {
-    boothId: ''
+    boothId: '',
+    amt: ''
   },
 
   onLoad: function (option) {
     var that = this;
     that.setData({
-      boothId: option.id
+      boothId: option.id,
+      amt: option.amount
     });
   },
 
@@ -46,7 +48,7 @@ Page({
           if (res.data.retCode == '00') {
             var companyId = res.data.retData.keyID;
             wx.navigateTo({
-              url: '../pay/pay?boothId=' + that.data.boothId + '&companyId=' + companyId
+              url: '../pay/pay?boothId=' + that.data.boothId + '&companyId=' + companyId + '&amt=' + that.data.amt
             })
           } else {
             wx.showModal({
@@ -62,7 +64,7 @@ Page({
   showTip: function () {
     wx.showModal({
       title: '购买须知',
-      content: '保险公司和无营业执照的公司购买后不提供展位,一家企业最多只能买两个展位',
+      content: '保险公司和无营业执照的公司购买后不提供展位',
       showCancel: false
     })
   },
