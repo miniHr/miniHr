@@ -98,10 +98,17 @@ Page({
           content: '此展位号已被购买，请重新选择！'
         })
       } else {
+        var companyId=wx.getStorageSync('companyId')||null;
         var amt = that.data.seatsInfo[id - 1].price;
-        wx.navigateTo({
-          url: '../enterpriseInfo/enterpriseInfo?id=' + this.data.boothId+'&amount='+amt
-        })
+        if(companyId==null){
+          wx.navigateTo({
+            url: '../enterpriseInfo/enterpriseInfo?id=' + this.data.boothId + '&amount=' + amt
+          })
+        }else{
+          wx.navigateTo({
+            url: '../pay/pay?boothId=' + that.data.boothId + '&companyId=' + companyId + '&amt=' + amt
+          })
+        }
       }
     }
   },

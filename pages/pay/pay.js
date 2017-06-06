@@ -51,9 +51,20 @@ Page({
             nonceStr: res.data.retData.redirectParamsMap.nonceStr,
             package: res.data.retData.redirectParamsMap.package,
             signType: res.data.retData.redirectParamsMap.signType,
-            paySign: res.data.retData.redirectParamsMap.paySign
+            paySign: res.data.retData.redirectParamsMap.paySign,
+            'fail': function (res) {
+              if (res.errMsg == 'requestPayment:fail cancel') {//取消支付
+                wx.request({
+                  url: 'https://561job.cn/booth/revert',
+                  data:{
+                    boothId: that.data.boothId
+                  },
+                  method:'GET'
+                })
+              }
+            }
           })
-        }else{
+        } else {
           wx.showModal({
             title: '意外',
             content: res.data.retData

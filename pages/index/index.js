@@ -85,9 +85,13 @@ Page({
         wx.redirectTo({
           url: '../job/job',
         })
-      } else {
+      } else if (level == '2') {//已付费企业用户
         wx.redirectTo({
           url: '../ResumeCollected/ResumeCollected',
+        })
+      } else {//未付费企业用户
+        wx.redirectTo({
+          url: '../position/position',
         })
       }
     } else {
@@ -102,15 +106,20 @@ Page({
             wx.redirectTo({
               url: '../enter/enter',
             })
-          }else{
+          } else {
             wx.setStorageSync('level', res.data.retData.level);
-            if (res.data.retData.level=='1'){
+            wx.setStorageSync('companyId', res.data.retData.companyId);
+            if (res.data.retData.level == '1') {
               wx.redirectTo({
-                url: '../../job/job',
+                url: '../job/job',
               })
-            }else{
+            } else if (res.data.retData.level == '2') {
               wx.redirectTo({
                 url: '../ResumeCollected/ResumeCollected',
+              })
+            } else {
+              wx.redirectTo({
+                url: '../position/position',
               })
             }
           }
