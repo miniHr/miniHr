@@ -3,6 +3,6 @@
   "navigationBarBackgroundColor": "#fb9fa4",
   "navigationBarTitleText": "6月25日体育场大型招聘会",
   "backgroundColor": "#ffffff",
-  "enablePullDownRefresh": false,
+  "enablePullDownRefresh": true,
   "backgroundTextStyle": "dark"
 }

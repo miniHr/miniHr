@@ -58,7 +58,10 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-
+    this.getAllSeats();
+    this.setData({
+      boothId:null
+    })
   },
 
   setToBuy: function (e) {
@@ -98,7 +101,7 @@ Page({
           content: '此展位号已被购买，请重新选择！'
         })
       } else {
-        var companyId=wx.getStorageSync('companyId')||null;
+        var companyId = app.globalData.companyId;
         var amt = that.data.seatsInfo[id - 1].price;
         if(companyId==null){
           wx.navigateTo({
@@ -142,6 +145,7 @@ Page({
         }
       }
     })
+    wx.stopPullDownRefresh();
   }
 })
 

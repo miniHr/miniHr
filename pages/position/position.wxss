@@ -2,62 +2,88 @@
 
 .view12 {
   display: flex;
-  width: 375px;
+  width: 100%;
+}
+
+.view13 {
+  display: flex;
+  width: 100%;
 }
 
 .column1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 30%;
-  padding-left: 30px;
+  margin-top: 20%;
+  margin-left:7%;
 }
 
 .column2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 30px;
-  margin-left: 20px;
+  margin-top: 5%;
+  margin-left: 8.5%;
+  margin-right: 5%;
 }
 
 .column3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 30px;
-  margin-left: 20px;
+  margin-top: 5%;
 }
 
 .column4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 30px;
-  margin-left: 95px;
+  margin-top: 5%;
+  margin-left: 27%;
+  margin-right: 5%;
 }
 
 .column5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 30px;
-  margin-left: 20px;
+  margin-top: 5%;
 }
 
 .column6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 30%;
-  padding-left: 20px;
+  margin-top: 20%;
+  margin-left:10%;
+  margin-right: 10%;
 }
 
 .seat {
-  width: 23px;
-  height: 23px;
+  width: 18px;
+  height: 18px;
   background-color: #e8e8e8 !important;
   margin-bottom: 3px;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+}
+
+.vip1 {
+  margin-left: 20%;
+  width:55px;
+  height: 23px;
+  background-color: #e8e8e8 !important;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+.vip2 {
+  margin-left: 27%;
+  width:55px;
+  height: 23px;
+  background-color: #e8e8e8 !important;
   color: #fff;
   font-size: 15px;
   text-align: center;
@@ -67,10 +93,10 @@
   margin-bottom: 10px;
 }
 
-.bought{
+.bought {
   background-color: #fb9fa4 !important;
 }
 
-.buying{
+.buying {
   background-color: #56c2b5 !important;
 }

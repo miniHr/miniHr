@@ -230,36 +230,33 @@ checkbox-group, radio-group {
 
 .view6 {
   display: flex;
-  width: 375px;
+  width: 100%;
+  margin-top: 1%;
 }
 
 .image2 {
   height: 15px;
   width: 15px;
   margin-left: 25px;
-  margin-top: 10px;
 }
 
 .text8 {
   width: 50px;
   height: 15px;
-  margin-top: 10px;
   font-size: 15px;
-  margin-left: 10px;
+  margin-left: 4%;
 }
 
 .image3 {
   width: 15px;
   height: 15px;
-  margin-top: 10px;
-  margin-left: 55px;
+  margin-left: 30%;
 }
 
 .image4 {
   width: 15px;
   height: 15px;
-  margin-top: 10px;
-  margin-left: 55px;
+  margin-left: 30%;
 }
 
 .button5 {
@@ -413,7 +410,10 @@ checkbox-group, radio-group {
 }
 
 .image8{
-  width: 375px;
-  height: 30px;
-  margin-top: 10px;
+  width: 100%;
+  height: 23px;
+}
+
+.view14{
+  width: 33%;
 }

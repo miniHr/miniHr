@@ -35,7 +35,8 @@ Page({
         showCancel: false
       })
     } else {
-      var enterpriseId = wx.getStorageSync('companyId') || null;
+      var enterpriseId = app.globalData.companyId;
+      console.log(enterpriseId);
       if (enterpriseId != null) {
         wx.navigateTo({
           url: '../pay/pay?boothId=' + that.data.boothId + '&companyId=' + enterpriseId + '&amt=' + that.data.amt
@@ -48,14 +49,13 @@ Page({
           data: {
             openId: wx.getStorageSync('openId'),
             companyName: companyName,
-            phone: companyPhone,
-            boothId: that.data.boothId
+            phone: companyPhone
           },
           method: 'GET',
           success: function (res) {
             if (res.data.retCode == '00') {
               var companyId = res.data.retData.keyID;
-              wx.setStorageSync('companyId', companyId);
+              app.globalData.companyId = res.data.retData.keyID;
               wx.navigateTo({
                 url: '../pay/pay?boothId=' + that.data.boothId + '&companyId=' + companyId + '&amt=' + that.data.amt
               })
