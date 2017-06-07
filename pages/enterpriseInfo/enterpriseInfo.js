@@ -123,7 +123,7 @@ Page({
 
   customService: function () {
     wx.makePhoneCall({
-      phoneNumber: ''
+      phoneNumber: '0561-2321060'
     })
   }
 })

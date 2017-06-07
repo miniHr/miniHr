@@ -79,52 +79,34 @@ Page({
   },
 
   goToNextPage: function () {
-    var level = wx.getStorageSync('level') || null;
-    if (level != null) {
-      if (level == '1') {//个人用户
-        wx.redirectTo({
-          url: '../job/job',
-        })
-      } else if (level == '2') {//已付费企业用户
-        wx.redirectTo({
-          url: '../ResumeCollected/ResumeCollected',
-        })
-      } else {//未付费企业用户
-        wx.redirectTo({
-          url: '../position/position',
-        })
-      }
-    } else {
-      wx.request({
-        url: 'https://561job.cn/user/query',
-        data: {
-          openId: wx.getStorageSync('openId')
-        },
-        method: "GET",
-        success: function (res) {
-          if (res.data.retCode == '01') {
+    wx.request({
+      url: 'https://561job.cn/user/query',
+      data: {
+        openId: wx.getStorageSync('openId')
+      },
+      method: "GET",
+      success: function (res) {
+        if (res.data.retCode == '01') {
+          wx.redirectTo({
+            url: '../enter/enter',
+          })
+        } else {
+          wx.setStorageSync('companyId', res.data.retData.companyId);
+          if (res.data.retData.level == '1') {
             wx.redirectTo({
-              url: '../enter/enter',
+              url: '../job/job',
+            })
+          } else if (res.data.retData.level == '2') {
+            wx.redirectTo({
+              url: '../ResumeCollected/ResumeCollected',
             })
           } else {
-            wx.setStorageSync('level', res.data.retData.level);
-            wx.setStorageSync('companyId', res.data.retData.companyId);
-            if (res.data.retData.level == '1') {
-              wx.redirectTo({
-                url: '../job/job',
-              })
-            } else if (res.data.retData.level == '2') {
-              wx.redirectTo({
-                url: '../ResumeCollected/ResumeCollected',
-              })
-            } else {
-              wx.redirectTo({
-                url: '../position/position',
-              })
-            }
+            wx.redirectTo({
+              url: '../position/position',
+            })
           }
         }
-      })
-    }
+      }
+    })
   }
 })
