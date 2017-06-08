@@ -334,16 +334,16 @@ checkbox-group, radio-group {
 }
 
 .image5 {
-  width: 90px;
-  height: 30px;
+  width: 92px;
+  height: 31px;
   margin-top: 50px;
   order: -1;
-  margin-right: 70px;
+  margin-right: 71px;
 }
 
 .image6 {
-  width: 90px;
-  height: 30px;
+  width: 92px;
+  height: 31px;
   margin-top: 50px;
 }
 
