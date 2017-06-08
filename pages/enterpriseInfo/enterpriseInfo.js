@@ -98,13 +98,27 @@ Page({
 
   checkOut2: function (e) {
     var str = e.detail.value;
+    var flag = false;
     if (!(/(^1[3|4|5|7|8]\d{9}$)|(^09\d{8}$)/.test(str))) {
+      if (!(/^(\d{3,4}\-)?\d{7,8}$/i).test(str)) {
+        if (!(/^0(([1-9]\d)|([3-9]\d{2}))\d{8}$/).test(str)) {
+          flag = false;
+        } else {
+          flag = true;
+        }
+      } else {
+        flag = true;
+      }
+    } else {
+      flag = true;
+    }
+    if (!flag) {
       this.setData({
         canConfirm: false
       })
       wx.showModal({
         title: '错误',
-        content: '手机号码格式不正确',
+        content: '电话号码格式不正确',
       })
     } else {
       this.setData({
