@@ -45,13 +45,17 @@ Page({
       method: 'GET',
       success: function (res) {
         if ('00' == res.data.retCode) {
-          console.log(res);
           wx.requestPayment({
             timeStamp: res.data.retData.redirectParamsMap.timeStamp,
             nonceStr: res.data.retData.redirectParamsMap.nonceStr,
             package: res.data.retData.redirectParamsMap.package,
             signType: res.data.retData.redirectParamsMap.signType,
             paySign: res.data.retData.redirectParamsMap.paySign,
+            'success':function(){
+              wx.redirectTo({
+                url: '../ResumeCollected/ResumeCollected',
+              })
+            },
             'fail': function (res) {
               if (res.errMsg == 'requestPayment:fail cancel') {//取消支付
                 wx.request({
