@@ -177,57 +177,6 @@ checkbox-group, radio-group {
   height: 50px;
 }
 
-.view3 {
-  display: flex;
-  margin-top: 50px;
-}
-
-.image1 {
-  width: 50px;
-  height: 50px;
-  margin-left: 20px;
-}
-
-.view4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 240px;
-  margin-left: 22px;
-}
-
-.view5 {
-  display: flex;
-}
-
-.text4 {
-  width: 130px;
-  font-size: 14px;
-  font-weight: bolder;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.text5 {
-  width: 110px;
-  color: rgb(43, 217, 196);
-  font-size: 14px;
-}
-
-.text6 {
-  align-self: flex-start;
-  width: 240px;
-  font-size: 12px;
-  margin-top: 5px;
-}
-
-.text7 {
-  align-self: center;
-  font-weight: bolder;
-}
-
 .view6 {
   display: flex;
   width: 100%;

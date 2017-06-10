@@ -1,0 +1,80 @@
+.wx-view_ntQpo3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36%;
+}
+
+.wx-text_17Abpy {
+  text-align: center;
+  height: 50px;
+  margin-top: 26px;
+  padding-top: 0px;
+  font-family: tahoma;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.nameAndAge{
+  text-align: center;
+  height: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.wx-view_jnJUFR {
+  margin-top: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wx-image_rVnIYp {
+  width: 5px;
+  height: 15px;
+  margin-left: 45px;
+}
+
+.wx-text_5rsURT {
+  margin-left: 14px;
+  font-size: 15px;
+}
+
+.wx-view_lGKuMZ {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wx-image_iMVAEE {
+  width: 5px;
+  height: 15px;
+  margin-left: 45px;
+}
+
+.wx-text_mmzT7I {
+  font-size: 15px;
+  margin-left: 14px;
+}
+
+.wx-view_ljbZP6 {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.wx-image_hnpdME {
+  width: 5px;
+  height: 15px;
+  margin-left: 45px;
+}
+
+.wx-text_9ifFJU {
+  font-size: 15px;
+  margin-left: 14px;
+}

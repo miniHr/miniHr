@@ -1,0 +1,73 @@
+.companyIntro {
+  display: flex;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-top-left-radius: 90px;
+  margin-left: 5%;
+}
+
+.companyName {
+  align-self: center;
+  margin-left: 3%;
+  font-size: 13px;
+}
+
+.info1 {
+  display: flex;
+  margin-top: 5%;
+}
+
+.companyScale {
+  font-size: 11px;
+  margin-left: 7%;
+}
+
+.companyAddr {
+  font-size: 11px;
+  padding-left: 10%;
+}
+
+.greyBorder {
+  height: 20px;
+  margin-top: 12%;
+  background-color: rgba(247, 247, 247, 1);
+}
+
+.detail {
+  display: flex;
+  margin-top: 5%;
+}
+
+.detailLabel {
+  width: 5px;
+  height: 15px;
+  padding-top: 0%;
+  margin-top: 0.5%;
+  margin-left: 6%;
+}
+
+.lableName1 {
+  font-size: 15px;
+  margin-left: 2%;
+}
+
+.jobDescri {
+  margin-top: 5%;
+  display: flex;
+}
+
+.jobName {
+  font-size: 13px;
+  margin-left: 6%;
+}
+
+.jobSalary {
+  font-size: 13px;
+  margin-left: 38%;
+}

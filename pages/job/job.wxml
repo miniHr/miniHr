@@ -1,11 +1,13 @@
 <view class="view3" >
-    <image class="image1"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/129ac03aa50b9e7f8d2b83c99b0a8b33_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/129ac03aa50b9e7f8d2b83c99b0a8b33_origin.png); "/>
+    <image class="image1"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png" style="background-size:    100% 100%; background-position:    0% 0%; background-repeat:    no-repeat;" bindtap="toDetail"/>
     <view class="view4" >
         <view class="view5" >
-            <text class="text4" >机电仪修车间主任/副主任</text>
-            <text class="text5" >3千-5千</text>
+            <text class="text4" >攻壳机动队SABER</text>
+            <text class="text5" >3000-5000</text>
         </view>
-        <text class="text6" >淮北徽香昱原早餐工程有限责任公司</text>
+        <text class="text6" >淮北智诚人力资源有限公司</text>
     </view>
-    <text class="text7" >98%</text>
+    <view class="match" >
+        <text class="percent" >98%</text>
+    </view>
 </view>

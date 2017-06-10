@@ -11,7 +11,12 @@
   "pages": [
     "pages/index/index", 
     "pages/applicant/applicant",
+    "pages/applicant/fill",
+    "pages/applicant/navigation",
+    "pages/applicant/resume",
     "pages/job/job",
+    "pages/job/companyDetail",
+    "pages/job/jobDetail",
     "pages/position/position",
     "pages/enterpriseInfo/enterpriseInfo",
     "pages/pay/pay",

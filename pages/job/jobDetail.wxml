@@ -1,0 +1,19 @@
+<view class="wx-view_3Tnqiy" >
+    <image class="wx-image_gdyhpj"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:    100% 100%; background-position:    0% 0%; background-repeat:    no-repeat;"/>
+    <text class="wx-text_WpOjDD" >攻壳机动队SABER</text>
+</view>
+<view class="wx-view_LRVFre" >
+    <image class="wx-image_dLud91"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;"/>
+    <text class="wx-text_wLkCVE" >薪资待遇</text>
+    <text class="wx-text_8anVAS" >3000-5000元</text>
+</view>
+<view class="wx-view_MutYsj" >
+    <image class="wx-image_ldwE8w"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;"/>
+    <text class="wx-text_lte6mV" >岗位要求</text>
+</view>
+<view class="wx-view_oovJLk" >
+    <textarea class="c-block wx-textarea_QA6UWf"  name="textarea1" type="textarea"/>
+</view>
+<button class="wx-button_H8sDOp"  hover-class="button-hover" size="default" type="default" bindtap="fillResume">
+    我要面试
+</button>

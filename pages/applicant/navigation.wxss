@@ -1,0 +1,26 @@
+.wx-view_b1cPBi {
+  margin-top: 50%;
+}
+
+.wx-text_iZRt8Y {
+  text-align: center;
+  color: #56c2b5;
+}
+
+.wx-text_aYMcBm {
+  text-align: center;
+  margin-top: 11px;
+  font-size: 15px;
+}
+
+.wx-button_6I53k1 {
+  width: 290px;
+  height: 52px;
+  margin-top: 21px;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-top-left-radius: 90px;
+  background-color: rgb(86, 194, 181) !important;
+  color: #fff !important;
+}

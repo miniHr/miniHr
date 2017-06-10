@@ -1,0 +1,18 @@
+<!--pages/job/companyDetail.wxml-->
+<view class="companyIntro" >
+    <image class="logo"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/129ac03aa50b9e7f8d2b83c99b0a8b33_origin.png" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat;"/>
+    <text class="companyName" >淮北智诚人力资源信息公司</text>
+</view>
+<view class="info1" >
+    <text class="companyScale" >公司规模：10-20人</text>
+    <text class="companyAddr" >公司地址：淮北市华松时代</text>
+</view>
+<view class="greyBorder" />
+<view class="detail" >
+    <image class="detailLabel"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;"/>
+    <text class="lableName1" >招聘中的职位</text>
+</view>
+<view class="jobDescri" bindtap="seeMore">
+    <text class="jobName" >网络推广人员</text>
+    <text class="jobSalary" >3000-4000元</text>
+</view>
