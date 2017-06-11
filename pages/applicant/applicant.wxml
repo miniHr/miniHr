@@ -9,25 +9,23 @@
 </view>
 <view class="view2 {{hide2}}">
   <text class="test2">“您的年龄是”</text>
-  <picker class="picker1" mode="selector" value="{{index}}" range="{{ages}}" bindchange="bindPickerChange1">
-    <button class="button4">{{ages[index]}}</button>
+  <picker class="picker1" mode="selector" range="{{ages}}" bindchange="bindPickerChange1">
+    <button class="button4">{{age}}</button>
   </picker>
 </view>
 <view class="view2 {{hide3}}">
   <text class="test2">“您的工作经验是”</text>
-  <picker class="picker1" mode="selector" value="{{index}}" range="{{industries}}" bindchange="bindPickerChange2">
+  <picker class="picker1" mode="selector" range="{{industries}}" value="{{indexs}}" bindchange="bindPickerChange2">
     <button class="button4">{{industry}}</button>
   </picker>
-  <picker class="picker2" mode="selector" value="{{index}}" range="{{worktimes}}" bindchange="bindPickerChange3">
+  <picker class="picker2" mode="selector" range="{{worktimes}}" value="{{indexs}}" bindchange="bindPickerChange3">
     <button class="button3">{{worktime}}</button>
   </picker>
 </view>
 <view class="view2 {{hide4}}">
   <text class="test2">“您的专业是”</text>
-  <picker class="picker1" mode="selector" value="{{index}}" range="{{educations}}" bindchange="bindPickerChange4">
+  <picker class="picker1" mode="selector" range="{{educations}}" value="{{indexs}}" bindchange="bindPickerChange4">
     <button class="button4">{{education}}</button>
   </picker>
-  <picker class="picker2" mode="selector" value="{{index}}" range="{{majors}}" bindchange="bindPickerChange5">
-    <button class="button3">{{major}}</button>
-  </picker>
+    <input class="button3" placeholder="{{major}}" placeholder-style="color:#FFFFFF;" bindblur="bindPickerChange5"/>
 </view>

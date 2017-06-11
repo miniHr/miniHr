@@ -14,22 +14,21 @@ Page({
    */
 
   data: {
-    index: 0,
+    indexs: 0,
     hide1: "",
     hide2: "hide",
     hide3: "hide",
     hide4: "hide",
     sex: "",
     ages: [],
-    age: 0,
-    industries: ["普工", "文职", "人事行政", "会计", "服务类", "策划设计", "销售", "技工", "管理", "其他"],
+    age: 16,
+    industries: ["普工", "人事行政", "会计", "服务类", "策划设计", "销售", "技工", "管理", "其他"],
     industry: "请选择行业",
     worktimes: [0, 5, 10, 15],
     worktime: "请选择时间",
     educations: ["小学", "初中", "高中", "中专", "大专", "本科", "硕士"],
     education: "请选择学历",
-    majors:["计算机","历史学"],
-    major: "请选择专业"
+    major: "请填写专业"
   },
 
   //以下为自定义点击事件
@@ -51,7 +50,6 @@ Page({
   bindPickerChange1: function (e) {//绑定年龄
     var arrs = this.data.ages;
     this.setData({
-      index: e.detail.value,
       age: arrs[e.detail.value],
       hide2: "hide",
       hide3: "",
@@ -61,7 +59,6 @@ Page({
     var ins = this.data.industries;
     var t1 = this.data.worktime;
     this.setData({
-      index: e.detail.value,
       industry: ins[e.detail.value],
     })
     if (t1 != '请选择时间') {
@@ -75,7 +72,6 @@ Page({
     var times = this.data.worktimes;
     var indus = this.data.industry;
     this.setData({
-      index: e.detail.value,
       worktime: times[e.detail.value]
     })
     if (indus != '请选择行业') {
@@ -89,25 +85,31 @@ Page({
     var edus = this.data.educations;
     var m = this.data.major;
     this.setData({
-      index: e.detail.value,
       education: edus[e.detail.value]
     })
-    if (m != '请选择专业') {
-        wx.redirectTo({
-          url: '../job/job',
-        })
+    if (m != '请填写专业') {
+      wx.redirectTo({
+        url: '../job/job?sex=' + this.data.sex + '&age=' + this.data.age + '&industry=' + this.data.industry + '&worktime=' + this.data.worktime + '&education=' + this.data.education + '&major=' + this.data.major
+      })
     }
   },
   bindPickerChange5: function (e) {//绑定专业
-    var mas = this.data.majors;
-    var ed = this.data.industry;
-    this.setData({
-      index: e.detail.value,
-      major: mas[e.detail.value]
-    })
-    if (ed != '请选择学历') {
+    var str = e.detail.value;
+    var es = this.data.education;
+    if (str == '') {
+      return;
+    }
+    if (es == '请选择学历') {
+      this.setData({
+        major: str
+      })
+      return;
+    } else {
+      this.setData({
+        major: str
+      })
       wx.redirectTo({
-        url: '../job/job',
+        url: '../job/job?sex=' + this.data.sex + '&age=' + this.data.age + '&industry=' + this.data.industry + '&worktime=' + this.data.worktime + '&education=' + this.data.education + '&major=' + this.data.major
       })
     }
   }
