@@ -22,9 +22,9 @@ Page({
     sex: "",
     ages: [],
     age: 16,
-    industries: ["普工", "人事行政", "会计", "服务类", "策划设计", "销售", "技工", "管理", "其他"],
+    industries: ["应届毕业生", "普工", "人事行政", "会计", "服务类", "策划设计", "销售", "技工", "管理", "其他"],
     industry: "请选择行业",
-    worktimes: [0, 5, 10, 15],
+    worktimes: [],
     worktime: "请选择时间",
     educations: ["小学", "初中", "高中", "中专", "大专", "本科", "硕士"],
     education: "请选择学历",
@@ -36,14 +36,19 @@ Page({
     var that = this;
     var id = e.currentTarget.id;
     var arr = new Array();
+    var arr2 = new Array();
     for (var i = 0; i <= 44; i++) {
       arr[i] = i + 16;
+    }
+    for (var i = 0; i <= 50; i++) {
+      arr2[i] = i;
     }
     that.setData({
       sex: id,
       hide1: "hide",
       hide2: "",
-      ages: arr
+      ages: arr,
+      worktimes:arr2
     })
   },
 

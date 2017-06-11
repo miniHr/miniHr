@@ -83,7 +83,7 @@ Page({
     if (level != null) {
       if (level == '1') {//个人用户
         wx.redirectTo({
-          url: '../job/job',
+          url: '../job/job?level='+level
         })
       } else if (level == '2') {//已付费企业用户
         wx.redirectTo({

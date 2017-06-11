@@ -14,54 +14,41 @@ Page({
    */
 
   data: {
-    recommend: {}
+    recommends: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(option) {
-    var that=this;
-    wx.request({//新增个人用户
-      url: 'https://561job.cn/user/insert',
-      data: {
-        sex: option.sex,
-        age: option.age,
-        industry: option.industry,
-        workTime: option.workTime,
-        education: option.education,
-        major: option.major
-      },
-      method: 'GET',
-      success: function (res1) {
-        if('01'==res.data.retCode){
-          wx.showModal({
-            title: '意外',
-            content: '出了点小差错！'
-          })
-        }else{
-            wx.request({
-              url: 'https://561job.cn/job/recommend',
-              data:{
-                openId: wx.getStorageSync('openId')
-              },
-              method: 'GET',
-              success:function(res2){
-                if ('01' == res.data.retCode){
-                  wx.showModal({
-                    title: '意外',
-                    content: '出了点小差错！'
-                  })
-                }else{
-                  that.setData({
-                    recommend:res2.data.retData
-                  })
-                }
-              }
+    var that = this;
+    var level = option.level || null;
+    if (level != null) {
+      that.getRecommendJobs();
+    } else {
+      wx.request({//新增个人用户
+        url: 'https://561job.cn/user/insert',
+        data: {
+          sex: option.sex,
+          age: option.age,
+          industry: option.industry,
+          workTime: option.workTime,
+          education: option.education,
+          major: option.major
+        },
+        method: 'GET',
+        success: function (res1) {
+          if ('01' == res.data.retCode) {
+            wx.showModal({
+              title: '意外',
+              content: '出了点小差错！'
             })
+          } else {
+            that.getRecommendJobs();
+          }
         }
-      }
-    })
+      })
+    }
   },
 
   /**
@@ -76,6 +63,28 @@ Page({
   toDetail: function () {
     wx.navigateTo({
       url: 'companyDetail',
+    })
+  },
+
+  getRecommendJobs: function () {
+    wx.request({
+      url: 'https://561job.cn/job/recommend',
+      data: {
+        openId: wx.getStorageSync('openId')
+      },
+      method: 'GET',
+      success: function (res2) {
+        if ('01' == res.data.retCode) {
+          wx.showModal({
+            title: '意外',
+            content: '出了点小差错！'
+          })
+        } else {
+          that.setData({
+            recommends: res2.data.retData
+          })
+        }
+      }
     })
   }
 })
