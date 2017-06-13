@@ -1,6 +1,6 @@
 <!--pages/job/companyDetail.wxml-->
 <view class="companyIntro" >
-    <image class="logo"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/129ac03aa50b9e7f8d2b83c99b0a8b33_origin.png" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat;"/>
+    <image class="logo"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat;"/>
     <text class="companyName" >淮北智诚人力资源信息公司</text>
 </view>
 <view class="info1" >

@@ -1,8 +1,12 @@
-<view class="wx-view_tjO99k" >
-    <image class="wx-image_9QcDYY"  mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;"/>
-    <view class="wx-view_fZ3DYR" >
-        <text class="wx-text_nbmddV" >Ghost in the shell</text>
-        <text class="wx-text_FzC6ry" >攻壳机动队SABER万事屋</text>
-    </view>
-    <text class="wx-text_v0uVdd" >3000-5000元包吃住</text>
+<view class="wx-view_kqSeNu">
+  <view class="wx-view_mnfrVB">
+    <image class="wx-image_wgQt4T" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; " bindtap="toCompanyDetail" id="1"/>
+  </view>
+  <view class="wx-view_mzd9nK">
+    <text class="c-block wx-text_ZFf1E0">机动组组长／销售人员</text>
+    <text class="c-block wx-text_q4yQOV">淮北市智诚人力资源有限公司</text>
+  </view>
+  <view class="wx-view_jfa383">
+    <text class="wx-text_jMqhe4">3000-5000元包吃住</text>
+  </view>
 </view>

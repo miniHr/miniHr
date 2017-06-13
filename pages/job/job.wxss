@@ -1,10 +1,15 @@
-.wx-view_tjO99k {
+.wx-view_kqSeNu {
+  margin-top: 8%;
   display: flex;
-  margin-top: 7%;
-  margin-left:20px;
 }
 
-.wx-image_9QcDYY {
+.wx-view_mnfrVB {
+  width: 23%;
+  display: flex;
+  justify-content: center;
+}
+
+.wx-image_wgQt4T {
   width: 50px;
   height: 50px;
   border-bottom-right-radius: 90px;
@@ -13,36 +18,34 @@
   border-top-left-radius: 90px;
 }
 
-.wx-view_fZ3DYR {
+.wx-view_mzd9nK {
   display: flex;
   flex-direction: column;
-  padding-top: 8px;
-  padding-left:15px;
+  justify-content: center;
+  width: 55%;
 }
 
-.wx-text_nbmddV {
-  width: 150px;
-  font-size: 13px;
+.wx-text_ZFf1E0 {
+  width: 100%;
+  font-size: 15px;
   font-weight: bolder;
-  white-space:nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
 
-.wx-text_FzC6ry {
-  width: 150px;
-  font-size: 11px;
-  white-space:nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.wx-text_v0uVdd {
-  font-weight: bolder;
+.wx-text_q4yQOV {
   font-size: 13px;
-  align-self: center;
-  width: 90px;
-  white-space:nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+
+.wx-view_jfa383 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 21%;
+}
+
+.wx-text_jMqhe4 {
+  font-size: 13px;
+  width: 100%;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }

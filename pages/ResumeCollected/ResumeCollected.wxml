@@ -1,3 +1,26 @@
-<view class="c-minheight view11" >
-    <text class="text13" >简历收藏于25日招聘会开放</text>
+<view class="wx-view_4hVM8o">
+  <image class="wx-image_MWNj6r" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;"
+  />
+  <text class="wx-text_GaFl5Z">Limo</text>
+  <view class="wx-view_PXQmPJ">
+    <image class="wx-image_YCsgi0" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;"
+    />
+    <view class="wx-view_qvrVui" >性别：男</view>
+    <view class="wx-view_W0ezJg" >学历：本科</view>
+  </view>
+  <view class="wx-view_8g9mtY">
+    <image class="wx-image_uOnIwd" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;"
+    />
+    <view class="wx-view_qvrVui" >专业：市场营销</view>
+    <view class="wx-view_W0ezJg" >经验：应届毕业生10年</view>
+  </view>
 </view>
+<view class="wx-view_VqCr8S">
+  <button class="wx-button_i32LFg" hover-class="button-hover" size="default" type="default">
+    PASS
+  </button>
+  <button class="wx-button_tXrSg7" hover-class="button-hover" size="default" type="default">
+    收藏
+  </button>
+</view>
+<view class="wx-view_Wc0Cz2" >查看已收藏简历</view>

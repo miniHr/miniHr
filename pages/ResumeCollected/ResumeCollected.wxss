@@ -1,3 +1,135 @@
-page { 
-    background-color: rgba(247,247,247,1);  
+Page {
+  background: #f7f7f7;
+}
+
+.wx-view_4hVM8o {
+  margin-top: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 330px;
+  background-color: #fff !important;
+}
+
+.wx-image_MWNj6r {
+  width: 150px;
+  height: 150px;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-top-left-radius: 90px;
+  align-self: center;
+  margin-left: 0%;
+  margin-top: 4%;
+}
+
+.wx-text_GaFl5Z {
+  font-size: 40px;
+  color: rgb(251, 159, 164);
+  text-align: center;
+  margin-top: 3%;
+  align-self: center;
+}
+
+.wx-view_PXQmPJ {
+  display: flex;
+  align-items: center;
+  margin-left: 0%;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.wx-image_YCsgi0 {
+  width: 10px;
+  height: 10px;
+  margin-left: 6%;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: center;
+}
+
+.wx-view_8g9mtY {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 7%;
+}
+
+.wx-image_uOnIwd {
+  width: 10px;
+  height: 10px;
+  margin-left: 6%;
+}
+
+.wx-text_d6haEp {
+  font-size: 13px;
+  margin-left: 43%;
+}
+
+.wx-view_qvrVui {
+  width: 35%;
+  margin-left: 2%;
+  font-size: 11px;
+}
+
+.wx-view_W0ezJg {
+  width: 50%;
+  margin-left: 18%;
+  font-size: 11px;
+}
+
+.wx-view_VqCr8S {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wx-button_i32LFg {
+  width: 90px;
+  height: 30px;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-top-left-radius: 90px;
+  font-size: 15px;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 1px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+}
+
+.wx-button_tXrSg7 {
+  width: 90px;
+  height: 30px;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-top-left-radius: 90px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(251, 159, 164);
+  color: #fb9fa4 !important;
+}
+
+.wx-view_Wc0Cz2 {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(251, 159, 164, 1);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  line-height: 50px;
+  color: #FFFFFF;
+  font-size: 15px;
 }
