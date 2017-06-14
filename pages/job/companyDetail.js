@@ -12,6 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that=this;
     var comId = options.keyId;
     wx.request({
       url: 'https://561job.cn/company/query',
@@ -26,7 +27,6 @@ Page({
             content: '出了点小差错！'
           })
         } else {
-          var that = this;
           that.setData({
             companyDetail: res1.data.retData
           })

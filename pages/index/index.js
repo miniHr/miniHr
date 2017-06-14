@@ -111,15 +111,15 @@ Page({
             app.globalData.level = res.data.retData.level;
             if (res.data.retData.level == '1') {
               wx.redirectTo({
-                url: '../job/job',
+                url: '../job/job?level=1'
               })
             } else if (res.data.retData.level == '2') {
               wx.redirectTo({
-                url: '../ResumeCollected/ResumeCollected',
+                url: '../ResumeCollected/ResumeCollected'
               })
             } else {
               wx.redirectTo({
-                url: '../position/position',
+                url: '../position/position'
               })
             }
           }

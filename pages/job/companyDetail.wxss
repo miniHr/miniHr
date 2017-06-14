@@ -26,6 +26,7 @@
 .companyScale {
   font-size: 11px;
   margin-left: 7%;
+  width: 37%;
 }
 
 .companyAddr {
@@ -57,17 +58,38 @@
   margin-left: 2%;
 }
 
-.jobDescri {
+.wx-view_2ndi0R {
+  display: flex;
+  flex-direction: column;
   margin-top: 5%;
+}
+
+.wx-view_MJOy0v {
   display: flex;
 }
 
-.jobName {
-  font-size: 13px;
-  margin-left: 6%;
+.wx-view_JrW36v {
+  height: 3px;
+  margin-top: 9px;
+  background-color: rgb(247, 247, 247);
+  padding-left: 53px;
+  width: 100%;
 }
 
-.jobSalary {
+.wx-view_kUalCv {
+  width: 50%;
+}
+
+.wx-view_iYWpZt {
+  width: 50%;
+}
+
+.wx-text_vvJq3f {
   font-size: 13px;
-  margin-left: 38%;
+  margin-left: 22px;
+}
+
+.wx-text_6sftm8 {
+  font-size: 13px;
+  margin-left: 25%;
 }

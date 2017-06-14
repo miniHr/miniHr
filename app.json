@@ -21,6 +21,7 @@
     "pages/enterpriseInfo/enterpriseInfo",
     "pages/pay/pay",
     "pages/ResumeCollected/ResumeCollected",
+    "pages/ResumeCollected/resumeDetail",
     "pages/enter/enter"
   ], 
   "networkTimeout": {

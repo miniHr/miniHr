@@ -5,5 +5,10 @@ const app = getApp();
 
 // 创建页面实例对象
 Page({
+  toResumeDetail:function(){
+    wx.navigateTo({
+      url: 'resumeDetail',
+    })
+  }
 })
 
