@@ -12,7 +12,7 @@
   <image class="detailLabel" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;" />
   <text class="lableName1">招聘中的职位</text>
 </view>
-<view class="wx-view_2ndi0R">
+<view class="wx-view_2ndi0R" bindtap="seeMore">
   <view class="wx-view_MJOy0v">
     <view class="wx-view_kUalCv">
       <text class="c-block wx-text_vvJq3f">网络推广人员</text>
