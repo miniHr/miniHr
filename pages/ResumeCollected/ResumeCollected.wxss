@@ -8,19 +8,17 @@ Page {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
   height: 330px;
   background-color: #fff !important;
+  border-radius: 30px;
 }
 
 .wx-image_MWNj6r {
   width: 150px;
   height: 150px;
-  border-bottom-right-radius: 90px;
-  border-bottom-left-radius: 90px;
-  border-top-right-radius: 90px;
-  border-top-left-radius: 90px;
+  border-radius: 90px;
   align-self: center;
   margin-left: 0%;
   margin-top: 4%;
@@ -91,35 +89,27 @@ Page {
 .wx-button_i32LFg {
   width: 90px;
   height: 30px;
-  border-bottom-right-radius: 90px;
-  border-bottom-left-radius: 90px;
-  border-top-right-radius: 90px;
-  border-top-left-radius: 90px;
+  border-radius: 90px;
   font-size: 15px;
-  align-self: flex-start;
   display: flex;
   justify-content: center;
   align-items: center;
   border-width: 1px;
-  border-bottom-style: solid;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-left-style: solid;
+  border-style: solid;
+  text-align: center;
 }
 
 .wx-button_tXrSg7 {
   width: 90px;
   height: 30px;
-  border-bottom-right-radius: 90px;
-  border-bottom-left-radius: 90px;
-  border-top-right-radius: 90px;
-  border-top-left-radius: 90px;
+  border-radius: 90px;
   font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid rgb(251, 159, 164);
   color: #fb9fa4 !important;
+  text-align: center;
 }
 
 .wx-view_Wc0Cz2 {
