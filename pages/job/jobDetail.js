@@ -5,54 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    jobDetail: {},
+    company: {},
+    boothId: null,
+    jobId: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var job = JSON.parse(options.job);
+    var company = JSON.parse(options.company);
+    this.setData({
+      boothId: options.boothId,
+      jobDetail: job,
+      company: company,
+      jobId: options.jobId
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  fillResume:function(){
+  fillResume: function () {
     wx.navigateTo({
-      url: '../applicant/fill',
+      url: '../applicant/fill?boothId=' + this.data.boothId + '&jobId=' + this.data.jobId
     })
   }
 })

@@ -13,7 +13,7 @@
   </view>
 </view>
 <view class="wx-view_VqCr8S">
-  <button class="wx-button_i32LFg" hover-class="button-hover" size="default" type="default">PASS</button>
+  <button class="wx-button_i32LFg" hover-class="button-hover" size="default" type="default" >PASS</button>
   <button class="wx-button_tXrSg7" hover-class="button-hover" size="default" type="default">收藏</button>
 </view>
 <view class="wx-view_Wc0Cz2" bindtap="toResumeDetail">查看已收藏简历</view>

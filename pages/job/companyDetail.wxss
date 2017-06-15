@@ -62,18 +62,24 @@
   display: flex;
   flex-direction: column;
   margin-top: 5%;
+  min-height: 200px;
+  overflow-y: auto;
 }
 
 .wx-view_MJOy0v {
   display: flex;
 }
 
+.view103{
+  margin:10px auto;
+  width: 90%;
+}
+
 .wx-view_JrW36v {
   height: 3px;
-  margin-top: 9px;
   background-color: rgb(247, 247, 247);
-  padding-left: 53px;
-  width: 100%;
+  margin:10px auto;
+  width: 90%;
 }
 
 .wx-view_kUalCv {

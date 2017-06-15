@@ -14,7 +14,7 @@ Page({
    */
 
   data: {
-    recommends: {}
+    recommends: []
   },
 
   /**
@@ -53,14 +53,6 @@ Page({
     }
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-
   //以下为自定义点击事件
   toCompanyDetail: function (e) {
     var key = e.currentTarget.id;
@@ -78,7 +70,7 @@ Page({
       },
       method: 'GET',
       success: function (res2) {
-        if ('01' == res.data.retCode) {
+        if ('01' == res2.data.retCode) {
           wx.showModal({
             title: '意外',
             content: '出了点小差错！'

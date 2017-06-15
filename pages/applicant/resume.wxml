@@ -1,19 +1,16 @@
 <view class="wx-view_ntQpo3">
-  <text class="c-block wx-text_17Abpy">LiMo</text>
-  <text class="nameAndAge">男|34</text>
+  <text class="c-block wx-text_17Abpy">{{resume.name}}</text>
+  <text class="nameAndAge">{{sex}}|{{resume.age}}</text>
   <view class="wx-view_jnJUFR">
-    <image class="wx-image_rVnIYp" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;"
-    />
-    <text class="wx-text_5rsURT">学历：本科            专业：市场营销</text>
+    <image class="wx-image_rVnIYp" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;" />
+    <text class="wx-text_5rsURT">学历：{{resume.education}}            专业：{{resume.major}}</text>
   </view>
   <view class="wx-view_lGKuMZ">
-    <image class="wx-image_iMVAEE" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;"
-    />
-    <text class="wx-text_mmzT7I">工作年限：10年</text>
+    <image class="wx-image_iMVAEE" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;" />
+    <text class="wx-text_mmzT7I">工作年限：{{resume.workTime}}年</text>
   </view>
   <view class="wx-view_ljbZP6">
-    <image class="wx-image_hnpdME" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;"
-    />
-    <text class="wx-text_9ifFJU">联系电话：13888888888</text>
+    <image class="wx-image_hnpdME" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;" />
+    <text class="wx-text_9ifFJU">联系电话：{{resume.phone}}</text>
   </view>
 </view>

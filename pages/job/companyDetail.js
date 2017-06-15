@@ -5,14 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    companyDetail: {}
+    companyDetail: {},
+    jobs: [],
+    boothId: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that=this;
+    var that = this;
     var comId = options.keyId;
     wx.request({
       url: 'https://561job.cn/company/query',
@@ -28,16 +30,22 @@ Page({
           })
         } else {
           that.setData({
-            companyDetail: res1.data.retData
+            companyDetail: res1.data.retData,
+            boothId: res1.data.retData.boothId,
+            jobs: res1.data.retDataTwo
           })
         }
       }
     })
   },
 
-  seeMore: function () {
+  seeMore: function (e) {
+    var jobId = e.currentTarget.dataset.jobId;
+    var jobd = this.data.jobs[e.currentTarget.id];
+    var job = JSON.stringify(jobd);
+    var company = JSON.stringify(this.data.companyDetail);
     wx.navigateTo({
-      url: 'jobDetail',
+      url: 'jobDetail?job=' + job + '&jobId=' + jobId + '&company=' + company + '&boothId=' + this.data.boothId
     })
   }
 })

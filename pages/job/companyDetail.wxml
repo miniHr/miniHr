@@ -1,6 +1,6 @@
 <!--pages/job/companyDetail.wxml-->
 <view class="companyIntro">
-  <image class="logo" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat;" />
+  <image class="logo" mode="scaleToFill" src="{{companyDetail.image}}" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat;" />
   <text class="companyName">{{companyDetail.companyName}}</text>
 </view>
 <view class="info1">
@@ -12,13 +12,13 @@
   <image class="detailLabel" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;" />
   <text class="lableName1">招聘中的职位</text>
 </view>
-<view class="wx-view_2ndi0R" bindtap="seeMore">
+<view class="wx-view_2ndi0R" wx:for="jobs" bindtap="seeMore" id="{{index}}" data-jobId="{{item.id}}">
   <view class="wx-view_MJOy0v">
     <view class="wx-view_kUalCv">
-      <text class="c-block wx-text_vvJq3f">网络推广人员</text>
+      <text class="c-block wx-text_vvJq3f">{{item.jobName}}</text>
     </view>
     <view class="wx-view_iYWpZt">
-      <text class="c-block wx-text_6sftm8">3000-5000包吃住</text>
+      <text class="c-block wx-text_6sftm8">{{item.jobSalary}}</text>
     </view>
   </view>
   <view class="wx-view_JrW36v" />

@@ -5,62 +5,34 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    resume: {},
+    sex: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this;
+    wx.request({
+      url: 'https://561job.cn//user/query',
+      data: {
+        openId: wx.getStorageSync('openId')
+      },
+      success: function (res) {
+        if ('01' == res.data.retCode) {
+          wx.showModal({
+            title: '意外',
+            content: '出了点小差错！'
+          })
+        } else {
+          var sex = res.data.retData.sex == '0' ? '男' : '女';
+          that.setData({
+            resume: res.data.retData,
+            sex: sex
+          })
+        }
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
 })

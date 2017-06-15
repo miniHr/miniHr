@@ -1,8 +1,8 @@
 <view class="wx-view_AAeNN1">
   <form class="c-minheight wx-form_OGZFwf">
     <view class="wx-view_cSgQLc">
-      <input class="wx-input_3iJuR9" name="input1" placeholder="姓名" type="text" />
-      <input class="wx-input_WBvDbQ" name="input1" placeholder="手机号码" type="text" />
+      <input class="wx-input_3iJuR9" name="input1" placeholder="姓名" type="text" bindblur="checkName"/>
+      <input class="wx-input_WBvDbQ" name="input2" placeholder="手机号码" type="text" bindblur="checkPhone"/>
     </view>
     <view class="c-minheight wx-view_pxXv5W">
       <button class="wx-button_7bjDmq" formType="submit" hover-class="button-hover" size="default" type="default" bindtap="sendToHr">

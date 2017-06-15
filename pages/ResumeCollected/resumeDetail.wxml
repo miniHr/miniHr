@@ -5,10 +5,12 @@
       <text class="c-block wx-text_D0HbG8">男/本科/市场管理专业/应届毕业生10年</text>
     </view>
     <view class="wx-view_vOdtmf">
-      <button class="wx-button_0aIIml" hover-class="button-hover" size="default" type="default">
+      <button class="wx-button_0aIIml" hover-class="button-hover" size="default" type="default" bindtap="callPhone">
         和TA聊聊
       </button>
     </view>
   </view>
 </view>
-<view class="wx-view_yXUm76" />
+<view class="wx-view_yXUm76">
+  <image src="http://qty83k.creatby.com/materials/origin/a5e31a065f4ae7540d20a8a0d0cbb547_origin.PNG" class="image100"></image>
+</view>

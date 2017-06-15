@@ -1,12 +1,12 @@
-<view class="wx-view_kqSeNu">
+<view class="wx-view_kqSeNu"  wx:for="{{recommends}}">
   <view class="wx-view_mnfrVB">
-    <image class="wx-image_wgQt4T" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/0c98a08227987950c10e634d0d20cff2_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; " bindtap="toCompanyDetail" id="23"/>
+    <image class="wx-image_wgQt4T" mode="scaleToFill" src="{{}}" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; " bindtap="toCompanyDetail" id="{{item.companyId}}" />
   </view>
   <view class="wx-view_mzd9nK">
-    <text class="c-block wx-text_ZFf1E0">机动组组长／销售人员</text>
-    <text class="c-block wx-text_q4yQOV">淮北市智诚人力资源有限公司</text>
+    <text class="c-block wx-text_ZFf1E0">{{item.jobName}}</text>
+    <text class="c-block wx-text_q4yQOV">{{item.companyName}}</text>
   </view>
   <view class="wx-view_jfa383">
-    <text class="wx-text_jMqhe4">3000-5000元包吃住</text>
+    <text class="wx-text_jMqhe4">{{item.jobSalary}}</text>
   </view>
 </view>
