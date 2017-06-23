@@ -17,7 +17,7 @@ Page({
       booth: options.boothId
     })
     wx.request({
-      url: '',
+      url: 'https://561job.cn/user/update',
       data: {
         openId: wx.getStorageSync('openId'),
         name: options.name,
@@ -32,16 +32,16 @@ Page({
           })
         } else {
           wx.request({
-            url: 'http://561job.cn/resume/insert',
+            url: 'https://561job.cn/resume/insert',
             data: {
               openId: wx.getStorageSync('openId'),
               jobId: options.jobId
             },
             success: function (res1) {
-              if ('01' == res.data.retCode) {
+              if ('01' == res1.data.retCode) {
                 wx.showModal({
-                  title: '意外',
-                  content: '出了点小差错！'
+                  title: '错误',
+                  content: res1.data.retData
                 })
               }
             }

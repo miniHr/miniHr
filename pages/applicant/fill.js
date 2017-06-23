@@ -1,4 +1,3 @@
-// pages/applicant/fill.js
 Page({
 
   /**
@@ -6,7 +5,8 @@ Page({
    */
   data: {
     boothId: null,
-    confirm: false,
+    confirm1: false,
+    confirm2: false,
     name: null,
     phone: null,
     jobId: null
@@ -26,7 +26,7 @@ Page({
     var str = e.detail.value;
     if (str.length < 1) {
       this.setData({
-        confirm: false
+        confirm1: false
       })
       wx.showModal({
         title: '错误',
@@ -34,7 +34,7 @@ Page({
       })
     } else {
       this.setData({
-        confirm: true,
+        confirm1: true,
         name: str
       })
     }
@@ -44,7 +44,7 @@ Page({
     var str = e.detail.value;
     if (!(/(^1[3|4|5|7|8]\d{9}$)|(^09\d{8}$)/.test(str))) {
       this.setData({
-        confirm: false
+        confirm2: false
       })
       wx.showModal({
         title: '错误',
@@ -52,16 +52,17 @@ Page({
       })
     } else {
       this.setData({
-        confirm: true,
-        phone: null
+        confirm2: true,
+        phone: str
       })
     }
   },
 
   sendToHr: function () {
     var that = this;
-    var canFirm = that.data.confirm;
-    if (!canFirm) {
+    var canFirm1 = that.data.confirm1;
+    var canFirm2 = that.data.confirm2;
+    if (!(canFirm1&&canFirm2)) {
       wx.showModal({
         title: '提示',
         content: '请将信息填写完整或正确',

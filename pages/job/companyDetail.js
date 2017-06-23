@@ -40,7 +40,7 @@ Page({
   },
 
   seeMore: function (e) {
-    var jobId = e.currentTarget.dataset.jobId;
+    var jobId = e.currentTarget.dataset.jobid;
     var jobd = this.data.jobs[e.currentTarget.id];
     var job = JSON.stringify(jobd);
     var company = JSON.stringify(this.data.companyDetail);

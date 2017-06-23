@@ -45,7 +45,7 @@ Page({
               content: '出了点小差错！'
             })
           } else {
-            app.globalData.level = res.data.retData.level;
+            app.globalData.level = res1.data.retData.level;
             that.getRecommendJobs();
           }
         }
@@ -77,10 +77,17 @@ Page({
           })
         } else {
           that.setData({
-            recommends: res2.data.retData
+            recommends: res2.data.retData.listInfos
           })
         }
       }
+    })
+  },
+  toJobDetail: function (e) {
+    var jobd = this.data.recommends[e.currentTarget.id];
+    var job2 = JSON.stringify(jobd);
+    wx.navigateTo({
+      url: 'jobDetail?fromJob=' + job2
     })
   }
 })

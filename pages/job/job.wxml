@@ -1,9 +1,9 @@
-<view class="wx-view_kqSeNu"  wx:for="{{recommends}}">
+<view class="wx-view_kqSeNu" wx:for="{{recommends}}">
   <view class="wx-view_mnfrVB">
-    <image class="wx-image_wgQt4T" mode="scaleToFill" src="{{}}" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; " bindtap="toCompanyDetail" id="{{item.companyId}}" />
+    <image class="wx-image_wgQt4T" mode="scaleToFill" src="{{item.image}}" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; " bindtap="toCompanyDetail" id="{{item.companyId}}" />
   </view>
   <view class="wx-view_mzd9nK">
-    <text class="c-block wx-text_ZFf1E0">{{item.jobName}}</text>
+    <text class="c-block wx-text_ZFf1E0" id="{{index}}" bindtap="toJobDetail">{{item.jobName}}</text>
     <text class="c-block wx-text_q4yQOV">{{item.companyName}}</text>
   </view>
   <view class="wx-view_jfa383">

@@ -12,7 +12,7 @@
     <text class="wx-text_lte6mV" >职位详情</text>
 </view>
 <view class="wx-view_oovJLk" >
-    <textarea class="c-block wx-textarea_QA6UWf"  name="textarea1" type="textarea" placeholder="{{jobDetail.jobDetail}}"/>
+    <textarea class="c-block wx-textarea_QA6UWf"  name="textarea1" type="textarea" placeholder="{{jobDetail.jobDetail}}" placeholder-style="font-size:12px;" disabled="true"/>
 </view>
 <button class="wx-button_H8sDOp"  hover-class="button-hover" size="default" type="default" bindtap="fillResume">
     我要面试

@@ -1,8 +1,8 @@
 <view class="wx-view_UdP982">
-  <view class="wx-view_Lqco3c" wx:for="stores">
+  <view class="wx-view_Lqco3c" wx:for="{{stores}}">
     <view class="wx-view_ECVQE3">
-      <text class="c-block wx-text_APu8Dv">Limo</text>
-      <text class="c-block wx-text_D0HbG8">{{item.sex}}/{{item.education}}/{{item.major}}/{{item.industry}}{{item.workTime}}年</text>
+      <text class="c-block wx-text_APu8Dv">{{item.name}}</text>
+      <text class="c-block wx-text_D0HbG8">{{item.sex=='1'?'女':'男'}}/{{item.education}}/{{item.major}}/{{item.industry}}{{item.workTime}}年</text>
     </view>
     <view class="wx-view_vOdtmf">
       <button class="wx-button_0aIIml" hover-class="button-hover" size="default" type="default" bindtap="callPhone" id="{{item.phone}}">

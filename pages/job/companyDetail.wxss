@@ -5,10 +5,7 @@
 .logo {
   width: 70px;
   height: 70px;
-  border-bottom-right-radius: 90px;
-  border-bottom-left-radius: 90px;
-  border-top-right-radius: 90px;
-  border-top-left-radius: 90px;
+  border-radius: 90%;
   margin-left: 5%;
 }
 
@@ -21,22 +18,31 @@
 .info1 {
   display: flex;
   margin-top: 5%;
+  flex-direction: column;
 }
 
 .companyScale {
-  font-size: 11px;
-  margin-left: 7%;
-  width: 37%;
+  font-size: 12px;
+  width: 100%;
+ margin-left: 5%;
 }
 
 .companyAddr {
-  font-size: 11px;
-  padding-left: 10%;
+  font-size: 12px;
+  width: 100%;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+.companyjianjie{
+  font-size: 12px;
+  width: 100%;
+  margin-top: 3%;
+  margin-left: 5%;
 }
 
 .greyBorder {
   height: 20px;
-  margin-top: 12%;
   background-color: rgba(247, 247, 247, 1);
 }
 
@@ -48,7 +54,6 @@
 .detailLabel {
   width: 5px;
   height: 15px;
-  padding-top: 0%;
   margin-top: 0.5%;
   margin-left: 6%;
 }
@@ -70,15 +75,15 @@
   display: flex;
 }
 
-.view103{
-  margin:10px auto;
+.view103 {
+  margin: 10px auto;
   width: 90%;
 }
 
 .wx-view_JrW36v {
   height: 3px;
   background-color: rgb(247, 247, 247);
-  margin:10px auto;
+  margin: 10px auto;
   width: 90%;
 }
 
@@ -98,4 +103,18 @@
 .wx-text_6sftm8 {
   font-size: 13px;
   margin-left: 25%;
+}
+
+.viewInstruct{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.textArea {
+  margin-top: 2%;
+  width: 90%;
+  min-height: 150px;
+  overflow-y: auto;
+  text-indent:1em;
 }

@@ -12,10 +12,7 @@
 .wx-image_wgQt4T {
   width: 50px;
   height: 50px;
-  border-bottom-right-radius: 90px;
-  border-bottom-left-radius: 90px;
-  border-top-right-radius: 90px;
-  border-top-left-radius: 90px;
+  border-radius: 90%;
 }
 
 .wx-view_mzd9nK {
@@ -29,12 +26,16 @@
   width: 100%;
   font-size: 15px;
   font-weight: bolder;
-  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .wx-text_q4yQOV {
   font-size: 13px;
-  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .wx-view_jfa383 {
@@ -47,5 +48,7 @@
 .wx-text_jMqhe4 {
   font-size: 13px;
   width: 100%;
-  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

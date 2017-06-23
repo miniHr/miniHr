@@ -6,20 +6,26 @@
 <view class="info1">
   <text class="companyScale">公司规模：{{companyDetail.scale}}</text>
   <text class="companyAddr">公司地址：{{companyDetail.address}}</text>
+  <text class="companyjianjie">公司简介：</text>
+</view>
+<view class="viewInstruct">
+  <textarea class="c-block textArea" name="textarea1" type="textarea" placeholder="{{companyDetail.information}}" placeholder-style="font-size:12px;color:#000000;" disabled="true" />
 </view>
 <view class="greyBorder" />
 <view class="detail">
   <image class="detailLabel" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/dbd6e108e006d6f7ebfd9dcfef35cc56_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;" />
   <text class="lableName1">招聘中的职位</text>
 </view>
-<view class="wx-view_2ndi0R" wx:for="jobs" bindtap="seeMore" id="{{index}}" data-jobId="{{item.id}}">
-  <view class="wx-view_MJOy0v">
-    <view class="wx-view_kUalCv">
-      <text class="c-block wx-text_vvJq3f">{{item.jobName}}</text>
+<view class="wx-view_2ndi0R">
+  <view class="view1000" wx:for="{{jobs}}" bindtap="seeMore" id="{{index}}" data-jobId="{{item.id}}">
+    <view class="wx-view_MJOy0v">
+      <view class="wx-view_kUalCv">
+        <text class="c-block wx-text_vvJq3f">{{item.jobName}}</text>
+      </view>
+      <view class="wx-view_iYWpZt">
+        <text class="c-block wx-text_6sftm8">{{item.jobSalary}}</text>
+      </view>
     </view>
-    <view class="wx-view_iYWpZt">
-      <text class="c-block wx-text_6sftm8">{{item.jobSalary}}</text>
-    </view>
+    <view class="wx-view_JrW36v" />
   </view>
-  <view class="wx-view_JrW36v" />
 </view>

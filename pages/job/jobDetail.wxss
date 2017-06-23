@@ -7,10 +7,7 @@
 }
 
 .wx-image_gdyhpj {
-  border-bottom-right-radius: 90px;
-  border-bottom-left-radius: 90px;
-  border-top-right-radius: 90px;
-  border-top-left-radius: 90px;
+  border-radius: 90%;
   width: 100px;
   height: 100px;
 }
@@ -65,10 +62,15 @@
 
 .wx-view_oovJLk {
   margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wx-textarea_QA6UWf {
-  margin-left: 28px;
+  width: 88%;
+  min-height: 120px;
+  overflow-y: auto;
 }
 
 .wx-button_H8sDOp {

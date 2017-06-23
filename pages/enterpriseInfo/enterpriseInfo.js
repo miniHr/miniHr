@@ -35,39 +35,37 @@ Page({
         showCancel: false
       })
     } else {
-      var enterpriseId = app.globalData.companyId;
-      console.log(enterpriseId);
-      if (enterpriseId != null) {
-        wx.navigateTo({
-          url: '../pay/pay?boothId=' + that.data.boothId + '&companyId=' + enterpriseId + '&amt=' + that.data.amt
-        })
-      } else {
-        var companyName = e.detail.value.input1;
-        var companyPhone = e.detail.value.input2;
-        wx.request({
-          url: 'https://561job.cn/company/insert',
-          data: {
-            openId: wx.getStorageSync('openId'),
-            companyName: companyName,
-            phone: companyPhone
-          },
-          method: 'GET',
-          success: function (res) {
-            if (res.data.retCode == '00') {
-              var companyId = res.data.retData.keyID;
-              app.globalData.companyId = res.data.retData.keyID;
-              wx.navigateTo({
-                url: '../pay/pay?boothId=' + that.data.boothId + '&companyId=' + companyId + '&amt=' + that.data.amt
-              })
-            } else {
-              wx.showModal({
-                title: '意外',
-                content: '出了点小差错！'
-              })
-            }
+      // var enterpriseId = app.globalData.companyId;
+      // if (enterpriseId != null) {
+      //   wx.navigateTo({
+      //     url: '../pay/pay?boothId=' + that.data.boothId + '&companyId=' + enterpriseId + '&amt=' + that.data.amt
+      //   })
+      // } else {
+      var companyName = e.detail.value.input1;
+      var companyPhone = e.detail.value.input2;
+      wx.request({
+        url: 'https://561job.cn/company/insert',
+        data: {
+          openId: wx.getStorageSync('openId'),
+          companyName: companyName,
+          phone: companyPhone
+        },
+        method: 'GET',
+        success: function (res) {
+          if (res.data.retCode == '00') {
+            var companyId = res.data.retData.keyID;
+            app.globalData.companyId = res.data.retData.keyID;
+            wx.navigateTo({
+              url: '../ResumeCollected/ResumeCollected'
+            })
+          } else {
+            wx.showModal({
+              title: '意外',
+              content: '出了点小差错！'
+            })
           }
-        })
-      }
+        }
+      })
     }
   },
 

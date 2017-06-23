@@ -29,7 +29,7 @@ Page({
           })
         } else {
           that.setData({
-            stores: res.data.retData.listInfos
+            stores: res1.data.retData.listInfos
           })
         }
       }

@@ -9,7 +9,7 @@ Page({
       })
     } else {
       wx.redirectTo({//企业用户
-        url: '../position/position?id=' + id
+        url: '../enterpriseInfo/enterpriseInfo?id=' + 1 + '&amount=' + 1
       })
     }
   }

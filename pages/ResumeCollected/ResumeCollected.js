@@ -30,16 +30,110 @@ Page({
           })
         } else {
           that.setData({
-            resumes: res.data.retData.listInfos,
-            resume: res.data.retData.listInfos[0]
+            resumes: res1.data.retData.listInfos,
+            resume: res1.data.retData.listInfos[0]
           })
         }
       }
     })
   },
 
-  save:function(){
+  onPullDownRefresh: function () {
+    var that = this;
+    wx.request({
+      url: 'https://561job.cn/resume/query',
+      data: {
+        openId: wx.getStorageSync('openId'),
+        level: 2,
+        state: 1
+      },
+      method: 'GET',
+      success: function (res1) {
+        if ('01' == res1.data.retCode) {
+          wx.showModal({
+            title: '意外',
+            content: '出了点小差错！'
+          })
+        } else {
+          that.setData({
+            resumes: res1.data.retData.listInfos,
+            resume: res1.data.retData.listInfos[0],
+            resumesIndex: 0
+          })
+        }
+      }
+    })
+    wx.stopPullDownRefresh();
+  },
 
+  save: function () {
+    var that = this;
+    var ind2 = that.data.resumesIndex;
+    var r = that.data.resumes;
+    if (ind2 >= r.length) {
+      wx.showModal({
+        title: '提示',
+        content: '没有更多的简历！'
+      })
+    } else {
+      var ind = that.data.resume.id;
+      wx.request({
+        url: 'https://561job.cn/resume/save',
+        data: {
+          id: ind
+        },
+        method: 'GET',
+        success: function (response) {
+          if ('01' == response.data.retCode) {
+            wx.showModal({
+              title: '意外',
+              content: '出了点小差错！'
+            })
+          } else {
+
+            that.setData({
+              resumesIndex: ind2 + 1,
+              resume: r[ind2 + 1]
+            })
+          }
+        }
+      })
+    }
+  },
+
+  deleteResume: function () {
+    var that = this;
+    var ind2 = that.data.resumesIndex;
+    var r = that.data.resumes;
+    if (ind2 >= r.length) {
+      wx.showModal({
+        title: '提示',
+        content: '没有更多的简历！'
+      })
+    } else {
+      var ind = that.data.resume.id;
+      wx.request({
+        url: 'https://561job.cn/resume/delete',
+        data: {
+          id: ind
+        },
+        method: 'GET',
+        success: function (response) {
+          if ('01' == response.data.retCode) {
+            wx.showModal({
+              title: '意外',
+              content: '出了点小差错！'
+            })
+          } else {
+            var r = that.data.resumes;
+            that.setData({
+              resumesIndex: ind2 + 1,
+              resume: r[ind2 + 1]
+            })
+          }
+        }
+      })
+    }
   },
 
   toResumeDetail: function () {
