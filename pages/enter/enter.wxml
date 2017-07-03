@@ -1,5 +1,7 @@
 <view class="view1">
-  <text class="test1">“您想”</text>
+  <text class="test1">欢迎您使用智能招聘会小程序</text>
+  <text class="t2">求职者请点击“找工作”获取门票</text>
+  <text class="t3">招聘单位请点击“找人才”获取应聘者数据</text>
   <button class="button1" hover-class="button-hover" size="default" type="default" id="2" bindtap="toNext">
     找工作
   </button>
