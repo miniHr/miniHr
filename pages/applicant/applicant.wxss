@@ -1,7 +1,47 @@
-page { 
-    background-color: #FFFFFF;  
+page {
+  background-color: #fff;
 }
 
-.hide{
-   display: none;
+.wx-view_bNikYL {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+}
+
+.wx-view_vM1RUx {
+  display: flex;
+  margin-top: 5%;
+}
+
+.wx-view_7OZuuf {
+  display: flex;
+  margin-top: 1%;
+}
+
+.wx-text_0lSJuj {
+  width: 30%;
+  margin-left: 5%;
+  height: 10%;
+  font-size: 15px;
+}
+
+.wx-input_nwEtaY {
+  height: 10%;
+  border: 1px solid rgb(0, 0, 0);
+  width: 50%;
+}
+
+.wx-radio-group_NMxmyK {
+  display: flex;
+  height: 10%;
+}
+
+.weui-radio-label_EXr4Jn {
+  margin-top: -4%;
+}
+
+.wx-text_yjQLdK {
+  font-size: 15px;
 }

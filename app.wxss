@@ -72,68 +72,6 @@ checkbox-group, radio-group {
   background-color: rgba(220, 220, 220, 1);
 }
 
-.view2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 40%;
-}
-
-.test2 {
-  font-size: 25px;
-}
-
-.button4 {
-  padding-top: 0px;
-  margin-top: 33px;
-  margin-bottom: 18px;
-  width: 290px;
-  height: 50px;
-  border-bottom-right-radius: 90px;
-  border-bottom-left-radius: 90px;
-  border-top-right-radius: 90px;
-  border-top-left-radius: 90px;
-  font-size: 20px;
-  background-color: #fb9fa4 !important;
-  color: rgb(255, 255, 255) !important;
-}
-
-.button3 {
-  margin-top: 5px;
-  width: 290px;
-  height: 50px;
-  border-bottom-right-radius: 90px;
-  border-bottom-left-radius: 90px;
-  border-top-right-radius: 90px;
-  border-top-left-radius: 90px;
-  font-size: 20px;
-  background-color: #56c2b5 !important;
-  color: rgb(255, 255, 255) !important;
-  text-align: center;
-}
-
-.picker1 {
-  margin-top: 33px;
-  margin-bottom: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 290px;
-  height: 50px;
-}
-
-.picker2 {
-  margin-top: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 290px;
-  height: 50px;
-}
-
 .view6 {
   display: flex;
   width: 100%;

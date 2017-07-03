@@ -1,31 +1,50 @@
-<view class="view2 {{hide1}}">
-  <text class="test2">“您的性别是”</text>
-  <button class="button4" hover-class="button-hover" size="default" type="default" id="1" bindtap="saveSex">
-    我是女生
-  </button>
-  <button class="button3" hover-class="button-hover" size="default" type="default" id="0" bindtap="saveSex">
-    我是男生
-  </button>
+<view class="wx-view_bNikYL">
+  <text class="wx-text_ItRPlw">请确认以下信息全部填写完整</text>
+  <text class="wx-text_WwwUdg">提交后可获得招聘会入场券</text>
+  <text class="wx-text_9XI62d">及一键投递简历功能</text>
 </view>
-<view class="view2 {{hide2}}">
-  <text class="test2">“您的年龄是”</text>
-  <picker class="picker1" mode="selector" range="{{ages}}" bindchange="bindPickerChange1">
-    <button class="button4">{{age}}</button>
-  </picker>
-</view>
-<view class="view2 {{hide3}}">
-  <text class="test2">“您的工作经验是”</text>
-  <picker class="picker1" mode="selector" range="{{industries}}" value="{{indexs}}" bindchange="bindPickerChange2">
-    <button class="button4">{{industry}}</button>
-  </picker>
-  <picker class="picker2" mode="selector" range="{{worktimes}}" value="{{indexs}}" bindchange="bindPickerChange3">
-    <button class="button3">{{worktime}}</button>
-  </picker>
-</view>
-<view class="view2 {{hide4}}">
-  <text class="test2">“您的专业是”</text>
-  <picker class="picker1" mode="selector" range="{{educations}}" value="{{indexs}}" bindchange="bindPickerChange4">
-    <button class="button4">{{education}}</button>
-  </picker>
-    <input class="button3" placeholder="{{major}}" placeholder-style="color:#FFFFFF;" bindblur="bindPickerChange5"/>
+<view class="wx-view_Vn7nqk">
+  <form class="wx-form_DTYcmJ">
+    <view class="wx-view_vM1RUx">
+      <text class="wx-text_0lSJuj">姓名</text>
+      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入姓名" type="text" />
+    </view>
+    <view class="wx-view_7OZuuf">
+      <text class="wx-text_0lSJuj">手机号</text>
+      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入手机号码" type="text" />
+    </view>
+    <view class="wx-view_7OZuuf">
+      <text class="wx-text_0lSJuj">性别</text>
+      <radio-group class="wx-radio-group_NMxmyK">
+        <label class="weui-radio-label_EXr4Jn">
+          <radio class="wx-radio_zIGFso" type="radio" />
+          <text class="wx-text_yjQLdK">radio</text>
+        </label>
+        <label class="radio c-block weui-radio-label_EXr4Jn">
+          <radio class="wx-radio_zIGFso" type="radio" />
+          <text class="radio-text wx-text_yjQLdK">radio</text>
+        </label>
+      </radio-group>
+    </view>
+    <view class="wx-view_7OZuuf">
+      <text class="wx-text_0lSJuj">手机号</text>
+      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入手机号码" type="text" />
+    </view>
+    <view class="wx-view_7OZuuf">
+      <text class="wx-text_0lSJuj">手机号</text>
+      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入手机号码" type="text" />
+    </view>
+    <view class="wx-view_7OZuuf">
+      <text class="wx-text_0lSJuj">手机号</text>
+      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入手机号码" type="text" />
+    </view>
+    <view class="wx-view_7OZuuf">
+      <text class="wx-text_0lSJuj">手机号</text>
+      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入手机号码" type="text" />
+    </view>
+    <view class="wx-view_7OZuuf">
+      <text class="wx-text_0lSJuj">手机号</text>
+      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入手机号码" type="text" />
+    </view>
+  </form>
 </view>
