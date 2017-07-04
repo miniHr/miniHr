@@ -3,48 +3,37 @@
   <text class="wx-text_WwwUdg">提交后可获得招聘会入场券</text>
   <text class="wx-text_9XI62d">及一键投递简历功能</text>
 </view>
-<view class="wx-view_Vn7nqk">
-  <form class="wx-form_DTYcmJ">
-    <view class="wx-view_vM1RUx">
-      <text class="wx-text_0lSJuj">姓名</text>
-      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入姓名" type="text" />
-    </view>
-    <view class="wx-view_7OZuuf">
-      <text class="wx-text_0lSJuj">手机号</text>
-      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入手机号码" type="text" />
-    </view>
-    <view class="wx-view_7OZuuf">
-      <text class="wx-text_0lSJuj">性别</text>
-      <radio-group class="wx-radio-group_NMxmyK">
-        <label class="weui-radio-label_EXr4Jn">
-          <radio class="wx-radio_zIGFso" type="radio" />
-          <text class="wx-text_yjQLdK">radio</text>
-        </label>
-        <label class="radio c-block weui-radio-label_EXr4Jn">
-          <radio class="wx-radio_zIGFso" type="radio" />
-          <text class="radio-text wx-text_yjQLdK">radio</text>
-        </label>
-      </radio-group>
-    </view>
-    <view class="wx-view_7OZuuf">
-      <text class="wx-text_0lSJuj">手机号</text>
-      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入手机号码" type="text" />
-    </view>
-    <view class="wx-view_7OZuuf">
-      <text class="wx-text_0lSJuj">手机号</text>
-      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入手机号码" type="text" />
-    </view>
-    <view class="wx-view_7OZuuf">
-      <text class="wx-text_0lSJuj">手机号</text>
-      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入手机号码" type="text" />
-    </view>
-    <view class="wx-view_7OZuuf">
-      <text class="wx-text_0lSJuj">手机号</text>
-      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入手机号码" type="text" />
-    </view>
-    <view class="wx-view_7OZuuf">
-      <text class="wx-text_0lSJuj">手机号</text>
-      <input class="wx-input_nwEtaY" name="input1" placeholder="请输入手机号码" type="text" />
-    </view>
-  </form>
-</view>
+<form class="wx-form_A2AT8z">
+  <view class="wx-view_39uYnO">
+    <text class="wx-text_psuTeR">姓名</text>
+    <input class="wx-input_VyXmyK" name="input1" placeholder="请填写姓名" placeholder-style="font-size: 12px;" type="text" />
+  </view>
+  <view class="wx-view_39uYnO">
+    <text class="wx-text_psuTeR">手机号</text>
+    <input class="wx-input_VyXmyK" name="input1" placeholder="请填写手机号" placeholder-style="font-size: 12px;" type="text" />
+  </view>
+  <view class="wx-view_39uYnO">
+    <text class="wx-text_psuTeR">性别</text>
+    <input class="wx-input_VyXmyK" name="input1" placeholder="请点击选择性别" placeholder-style="font-size: 12px;" type="text" />
+  </view>
+  <view class="wx-view_39uYnO">
+    <text class="wx-text_psuTeR">年龄</text>
+    <input class="wx-input_VyXmyK" name="input1" placeholder="请填写年龄" placeholder-style="font-size: 12px;" type="text" />
+  </view>
+  <view class="wx-view_39uYnO">
+    <text class="wx-text_psuTeR">学历</text>
+    <input class="wx-input_VyXmyK" name="input1" placeholder="请点击选择学历" placeholder-style="font-size: 12px;" type="text" />
+  </view>
+  <view class="wx-view_39uYnO">
+    <text class="wx-text_psuTeR">所学专业</text>
+    <input class="wx-input_VyXmyK" name="input1" placeholder="请填写所学专业" placeholder-style="font-size: 12px;" type="text" />
+  </view>
+  <view class="wx-view_39uYnO">
+    <text class="wx-text_psuTeR">工作经验</text>
+    <input class="wx-input_VyXmyK" name="input1" placeholder="请点击选择工作经验" placeholder-style="font-size: 12px;" type="text" />
+  </view>
+  <view class="wx-view_39uYnO">
+    <text class="wx-text_psuTeR">从业时间</text>
+    <input class="wx-input_VyXmyK" name="input1" placeholder="请填写从业时间" placeholder-style="font-size: 12px;" type="text" />
+  </view>
+</form>
