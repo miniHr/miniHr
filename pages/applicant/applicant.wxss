@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8%;
 }
 
 .wx-form_A2AT8z {
@@ -15,7 +14,7 @@
 .wx-view_39uYnO {
   display: flex;
   align-items: center;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   margin-left: 11%;
 }
 
@@ -25,8 +24,8 @@
 }
 
 .wx-input_VyXmyK {
-  height: 37.5rpx;
-  min-height: 37.5rpx;
+  height: 55rpx;
+  min-height: 55rpx;
   border: 1px solid rgb(0, 0, 0);
   width: 375rpx;
 }
