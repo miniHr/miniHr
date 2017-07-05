@@ -28,8 +28,15 @@
   min-height: 55rpx;
   border: 1px solid rgb(0, 0, 0);
   width: 375rpx;
-  justify-content: center;
+}
+
+.wx-button_VyXmyK {
+  height: 55rpx;
+  min-height: 55rpx;
+  border: 1px solid rgb(0, 0, 0);
+  width: 375rpx;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 

@@ -32,7 +32,7 @@
   <view class="wx-view_39uYnO">
     <text class="wx-text_psuTeR">学历</text>
     <picker class="picker1" mode="selector" range="{{educations}}" value="{{index}}" bindchange="bindPickerChange1">
-      <button class="wx-input_VyXmyK" name="education" placeholder="请点击选择学历" placeholder-style="font-size: 12px;" type="text" >{{education}}</button>
+      <button class="wx-button_VyXmyK" name="education">{{education}}</button>
     </picker>
   </view>
   <view class="wx-view_39uYnO">
