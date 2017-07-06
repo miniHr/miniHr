@@ -14,16 +14,21 @@ Page({
    */
 
   data: {
-    index:0,
+    index: 0,
     industries: ["普工", "人事行政", "会计", "服务类", "策划设计", "销售", "技工", "管理", "其他"],
-    industry: "",
+    industry: "请点击选择工作经验",
     educations: ["小学", "初中", "高中", "中专", "大专", "本科", "硕士"],
     education: "请点击选择学历",
     ways: ["微信公众号", "QQ群", "智诚招聘网", "论坛门户", "广播电视", "出租车广告", "小程序", "熟人介绍", "其它"],
-    way: "",
+    way: "请点击选择渠道",
     expectAddres: ["淮北全市", "相山区", "杜集区", "烈山区", "濉溪县", "合肥", "芜湖", "宿州", "徐州/宿迁", "南京/苏州/无锡/常州/镇江", "杭州/宁波/温州", "珠三角"],
-    expectAddr: "",
-    expectType: ""
+    expectAddr: "请点击选择期望工作地点",
+    expectType: "请点击选择期望工作类型",
+    correct1: false,
+    correct2: false,
+    correct3: false,
+    correct4: false,
+    correct5: false
   },
 
   bindPickerChange1: function (e) {
@@ -59,6 +64,96 @@ Page({
     this.setData({
       way: arr[e.detail.value]
     })
+  },
+
+  checkout: function (e) {
+    var that = this;
+    var name = e.currentTarget.dataset.name;
+    var value = e.detail.value;
+    if ("phone" == name) {
+      if (!(/(^1[3|4|5|7|8]\d{9}$)|(^09\d{8}$)/.test(value))) {
+        if (!(/^(\d{3,4}\-)?\d{7,8}$/i).test(value)) {
+          if (!(/^0(([1-9]\d)|([3-9]\d{2}))\d{8}$/).test(value)) {
+            that.setData({
+              correct2: false
+            })
+            wx.showModal({
+              title: '温馨提示',
+              content: '手机格式不正确',
+            })
+          } else {
+            that.setData({
+              correct2: true
+            })
+          }
+        } else {
+          that.setData({
+            correct2: true
+          })
+        }
+      } else {
+        that.setData({
+          correct2: true
+        })
+      }
+    } else {
+      if ("" == value) {
+        if ("1" == name) {
+          that.setData({
+            correct1: false
+          })
+        } else if ("3" == name) {
+          that.setData({
+            correct3: false
+          })
+        } else if ("4" == name) {
+          that.setData({
+            correct4: false
+          })
+        } else {
+          that.setData({
+            correct5: false
+          })
+        }
+        wx.showModal({
+          title: '温馨提示',
+          content: '请填写完整信息',
+        })
+      } else {
+        if ("1" == name) {
+          that.setData({
+            correct1: true
+          })
+        } else if ("3" == name) {
+          that.setData({
+            correct3: true
+          })
+        } else if ("4" == name) {
+          that.setData({
+            correct4: true
+          })
+        } else {
+          that.setData({
+            correct5: true
+          })
+        }
+      }
+    }
+  },
+
+  commit: function (e) {
+    var that = this;
+    if (!(that.data.correct1 && that.data.correct2 && that.data.correct3 && that.data.correct4 && that.data.correct5) || that.data.industry == "请点击选择工作经验" || that.data.education == "请点击选择学历" || that.data.way == "请点击选择渠道" || that.data.expectAddr == "请点击选择期望工作地点" || that.data.expectType == "请点击选择期望工作类型") {//校验失败
+      wx.showModal({
+        title: '提示',
+        content: '请将信息填写完整或正确',
+        showCancel: false
+      })
+    } else {
+      var person={
+        
+      };
+    }
   }
 })
 

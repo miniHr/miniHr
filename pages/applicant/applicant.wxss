@@ -28,6 +28,7 @@
   min-height: 55rpx;
   border: 1px solid rgb(0, 0, 0);
   width: 375rpx;
+  font-size: 25rpx;
 }
 
 .wx-button_VyXmyK {
@@ -38,6 +39,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-size: 25rpx;
 }
 
 .wx-view_DmPvjT {
@@ -83,7 +85,7 @@
   display: flex;
   align-items: center;
   margin-left: 11%;
-  margin-bottom: 5%;
+  margin-bottom: 25rpx;
 }
 
 .wx-input_nbRzbD {
@@ -122,6 +124,10 @@
 
 .no {
   margin-left: 30%;
+}
+
+.b1 {
+  width: 560rpx;
 }
 
 .picker1 {
