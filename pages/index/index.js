@@ -85,15 +85,14 @@ Page({
         wx.redirectTo({
           url: '../job/job?level=' + level
         })
-      } else {//if (level == '2') {//已付费企业用户
+      } else if (level == '2') {//已付费企业用户
         wx.redirectTo({
           url: '../ResumeCollected/ResumeCollected',
         })
-        // } else {//未付费企业用户
-        //   wx.redirectTo({
-        //     url: '../position/position',
-        //   })
-        // }
+      } else {//未付费企业用户
+        wx.redirectTo({
+          url: '../position/position',
+        })
       }
     } else {
       wx.request({
@@ -114,15 +113,15 @@ Page({
               wx.redirectTo({
                 url: '../job/job?level=1'
               })
-            } else {//if (res.data.retData.level == '2') {
+            } else if (res.data.retData.level == '2') {
               wx.redirectTo({
                 url: '../ResumeCollected/ResumeCollected'
               })
-            } //else {
-            //wx.redirectTo({
-            //  url: '../position/position'
-            // })
-            //}
+            } else {
+              wx.redirectTo({
+                url: '../position/position'
+              })
+            }
           }
         }
       })
