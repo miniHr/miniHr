@@ -1,0 +1,139 @@
+.wx-view_bNikYL {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wx-form_A2AT8z {
+  display: flex;
+  margin-top: 6%;
+  flex-direction: column;
+}
+
+.wx-view_39uYnO {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+  margin-left: 11%;
+}
+
+.wx-text_psuTeR {
+  font-size: 15px;
+  width: 100px;
+}
+
+.wx-input_VyXmyK {
+  height: 55rpx;
+  min-height: 55rpx;
+  border: 1px solid rgb(0, 0, 0);
+  width: 375rpx;
+  font-size: 25rpx;
+}
+
+.wx-button_VyXmyK {
+  height: 55rpx;
+  min-height: 55rpx;
+  border: 1px solid rgb(0, 0, 0);
+  width: 375rpx;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25rpx;
+}
+
+.wx-view_DmPvjT {
+  display: flex;
+  align-items: center;
+  margin-left: 13%;
+  justify-content: flex-start;
+  margin-bottom: 1%;
+}
+
+.wx-text_6pytKT {
+  font-size: 15px;
+}
+
+.wx-radio-group_thc0Ck {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.weui-radio-label_UpHum5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wx-text_CARrpa {
+  font-size: 15px;
+}
+
+.wx-view_2hQ67A {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 13%;
+}
+
+.wx-text_tlYE2o {
+  font-size: 15px;
+}
+
+.wx-view_pL9v5l {
+  display: flex;
+  align-items: center;
+  margin-left: 11%;
+  margin-bottom: 25rpx;
+}
+
+.wx-input_nbRzbD {
+  display: flex;
+  align-items: center;
+  width: 573.75rpx;
+  height: 55rpx;
+  min-height: 55rpx;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+}
+
+.wx-button_Y7AQAY {
+  width: 290px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 90px;
+  color: #fff !important;
+  background-color: rgb(86, 194, 181) !important;
+}
+
+.man {
+  margin-left: 33%;
+}
+
+.women {
+  margin-left: 30%;
+}
+
+.yes {
+  margin-left: 10%;
+}
+
+.no {
+  margin-left: 30%;
+}
+
+.b1 {
+  width: 560rpx;
+}
+
+.picker1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 23px;
+}

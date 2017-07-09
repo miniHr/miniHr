@@ -110,8 +110,10 @@ Page({
             app.globalData.companyId = res.data.retData.companyId;
             app.globalData.level = res.data.retData.level;
             if (res.data.retData.level == '1') {
+              var jsonPerson = JSON.stringify(res.data.retData);
+              wx.setStorageSync('jsonPerson', jsonPerson);
               wx.redirectTo({
-                url: '../job/job?level=1'
+                url: '../applicant/pass?jsonPerson=' + jsonPerson +'&isInsert=no'
               })
             } else if (res.data.retData.level == '2') {
               wx.redirectTo({

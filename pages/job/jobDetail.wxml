@@ -14,6 +14,6 @@
 <view class="wx-view_oovJLk" >
     <textarea class="c-block wx-textarea_QA6UWf"  name="textarea1" type="textarea" placeholder="{{jobDetail.jobDetail}}" placeholder-style="font-size:12px;" disabled="true"/>
 </view>
-<button class="wx-button_H8sDOp"  hover-class="button-hover" size="default" type="default" bindtap="fillResume">
+<button class="wx-button_H8sDOp"  hover-class="button-hover" size="default" type="default" bindtap="sendResume">
     我要面试
 </button>

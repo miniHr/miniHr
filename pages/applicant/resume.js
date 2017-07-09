@@ -1,11 +1,12 @@
 // pages/applicant/resume.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    resume: {},
+    resume: null,
     sex: null
   },
 
@@ -14,25 +15,11 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    wx.request({
-      url: 'https://561job.cn//user/query',
-      data: {
-        openId: wx.getStorageSync('openId')
-      },
-      success: function (res) {
-        if ('01' == res.data.retCode) {
-          wx.showModal({
-            title: '意外',
-            content: '出了点小差错！'
-          })
-        } else {
-          var sex = res.data.retData.sex == '0' ? '男' : '女';
-          that.setData({
-            resume: res.data.retData,
-            sex: sex
-          })
-        }
-      }
+    var userInfo = JSON.parse(wx.getStorageSync('jsonPerson'));
+    var sex = userInfo.sex == 0 ? '男' : '女';
+    that.setData({
+      resume: userInfo,
+      sex:sex
     })
   },
 })

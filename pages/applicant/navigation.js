@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    booth: null
+    jobId: null
   },
 
   /**
@@ -14,37 +14,24 @@ Page({
   onLoad: function (options) {
     var that = this;
     that.setData({
-      booth: options.boothId
+      jobId: options.jobId,
+      boothId: options.boothId
     })
+  },
+
+  onReady: function (e) {
+    var that = this;
     wx.request({
-      url: 'https://561job.cn/user/update',
+      url: 'https://561job.cn/resume/insert',
       data: {
         openId: wx.getStorageSync('openId'),
-        name: options.name,
-        phone: options.phone
+        jobId: that.data.jobId
       },
-      method: 'GET',
-      success: function (res) {
-        if ('01' == res.data.retCode) {
+      success: function (res1) {
+        if ('01' == res1.data.retCode) {
           wx.showModal({
-            title: '意外',
-            content: '出了点小差错！'
-          })
-        } else {
-          wx.request({
-            url: 'https://561job.cn/resume/insert',
-            data: {
-              openId: wx.getStorageSync('openId'),
-              jobId: options.jobId
-            },
-            success: function (res1) {
-              if ('01' == res1.data.retCode) {
-                wx.showModal({
-                  title: '错误',
-                  content: res1.data.retData
-                })
-              }
-            }
+            title: '错误',
+            content: res1.data.retData
           })
         }
       }

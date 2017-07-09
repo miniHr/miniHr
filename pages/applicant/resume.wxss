@@ -1,7 +1,7 @@
 .wx-view_ntQpo3 {
   display: flex;
   flex-direction: column;
-  margin-top: 36%;
+  margin-top: 300rpx;
 }
 
 .wx-text_17Abpy {

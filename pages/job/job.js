@@ -22,35 +22,7 @@ Page({
    */
   onLoad(option) {
     var that = this;
-    var level = option.level || null;
-    if (level != null) {
-      that.getRecommendJobs();
-    } else {
-      wx.request({//新增个人用户
-        url: 'https://561job.cn/user/insert',
-        data: {
-          openId: wx.getStorageSync('openId'),
-          sex: option.sex,
-          age: option.age,
-          industry: option.industry,
-          workTime: option.worktime,
-          education: option.education,
-          major: option.major
-        },
-        method: 'GET',
-        success: function (res1) {
-          if ('01' == res1.data.retCode) {
-            wx.showModal({
-              title: '意外',
-              content: '出了点小差错！'
-            })
-          } else {
-            app.globalData.level = res1.data.retData.level;
-            that.getRecommendJobs();
-          }
-        }
-      })
-    }
+    that.getRecommendJobs();
   },
 
   //以下为自定义点击事件
@@ -69,15 +41,15 @@ Page({
         openId: wx.getStorageSync('openId')
       },
       method: 'GET',
-      success: function (res2) {
-        if ('01' == res2.data.retCode) {
+      success: function (res1) {
+        if ('01' == res1.data.retCode) {
           wx.showModal({
             title: '意外',
             content: '出了点小差错！'
           })
         } else {
           that.setData({
-            recommends: res2.data.retData.listInfos
+            recommends: res1.data.retData.listInfos
           })
         }
       }

@@ -1,6 +1,6 @@
 <view class="wx-view_b1cPBi">
   <text class="c-block wx-text_iZRt8Y">恭喜，简历发送成功</text>
-  <text class="c-block wx-text_aYMcBm">请前往{{booth}}号面试</text>
+  <text class="c-block wx-text_aYMcBm">请前往{{boothId}}号面试</text>
   <button class="wx-button_6I53k1" hover-class="button-hover" size="default" type="default" bindtap="preResume">
     简历预览
   </button>

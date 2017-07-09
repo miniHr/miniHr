@@ -1,17 +1,18 @@
 {
-  "debug": true, 
+  "debug": true,
   "window": {
-    "navigationBarTextStyle": "black", 
-    "navigationBarBackgroundColor": "#FFFFFF", 
-    "navigationBarTitleText": "", 
-    "backgroundColor": "#ffffff", 
-    "enablePullDownRefresh": false, 
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": false,
     "backgroundTextStyle": "dark"
-  }, 
+  },
   "pages": [
-    "pages/index/index", 
+    "pages/index/index",
     "pages/applicant/applicant",
-    "pages/applicant/fill",
+    "pages/applicant/pass",
+    "pages/applicant/modifyResume",
     "pages/applicant/navigation",
     "pages/applicant/resume",
     "pages/job/job",
@@ -23,11 +24,11 @@
     "pages/ResumeCollected/ResumeCollected",
     "pages/ResumeCollected/resumeDetail",
     "pages/enter/enter"
-  ], 
+  ],
   "networkTimeout": {
-    "connectSocket": "", 
-    "request": "", 
-    "downloadFile": "", 
+    "connectSocket": "",
+    "request": "",
+    "downloadFile": "",
     "uploadFile": ""
   }
 }

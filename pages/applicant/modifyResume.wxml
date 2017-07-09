@@ -1,53 +1,48 @@
-<view class="wx-view_bNikYL">
-  <text class="wx-text_ItRPlw">请确认以下信息全部填写完整</text>
-  <text class="wx-text_WwwUdg">提交后可获得招聘会入场券</text>
-  <text class="wx-text_9XI62d">及一键投递简历功能</text>
-</view>
 <form class="wx-form_A2AT8z" bindsubmit="commit">
   <view class="wx-view_39uYnO">
     <text class="wx-text_psuTeR">姓名</text>
-    <input class="wx-input_VyXmyK" name="name" placeholder="请填写姓名" placeholder-style="font-size: 25rpx;text-align: center;" type="text" bindblur="checkout" data-name="1" />
+    <input class="wx-input_VyXmyK" name="name" placeholder="请填写姓名" placeholder-style="font-size: 25rpx;text-align: center;" type="text" bindblur="checkout" data-name="1" value="{{userInfo.name}}" />
   </view>
   <view class="wx-view_39uYnO">
     <text class="wx-text_psuTeR">手机号</text>
-    <input class="wx-input_VyXmyK" name="phone" placeholder="请填写手机号" placeholder-style="font-size: 25rpx;text-align: center;" type="number" bindblur="checkout" data-name="phone" />
+    <input class="wx-input_VyXmyK" name="phone" placeholder="请填写手机号" placeholder-style="font-size: 25rpx;text-align: center;" type="number" bindblur="checkout" data-name="phone" value="{{userInfo.phone}}" />
   </view>
   <view class="wx-view_39uYnO">
     <text class="wx-text_psuTeR">性别</text>
     <radio-group class="wx-radio-group_thc0Ck" bindchange="changeSelection" data-name="sex">
       <label class="weui-radio-label_UpHum5 man">
-        <radio class="wx-radio_MPrPb5" type="radio" checked="true" value="0" />
+        <radio class="wx-radio_MPrPb5" type="radio" checked="{{userInfo.sex==0}}" value="0" />
         <text class="wx-text_CARrpa">男</text>
       </label>
       <label class="weui-radio-label_UpHum5 women">
-        <radio class="wx-radio_MPrPb5" type="radio" value="1" />
+        <radio class="wx-radio_MPrPb5" type="radio" value="1" checked="{{userInfo.sex==1}}" />
         <text class="wx-text_CARrpa">女</text>
       </label>
     </radio-group>
   </view>
   <view class="wx-view_39uYnO">
     <text class="wx-text_psuTeR">年龄</text>
-    <input class="wx-input_VyXmyK" name="age" placeholder="请填写年龄" placeholder-style="font-size: 25rpx;text-align: center;" type="number" bindblur="checkout" data-name="3" maxlength="2" />
+    <input class="wx-input_VyXmyK" name="age" placeholder="请填写年龄" placeholder-style="font-size: 25rpx;text-align: center;" type="number" bindblur="checkout" data-name="3" maxlength="2" value="{{userInfo.age}}" />
   </view>
   <view class="wx-view_39uYnO">
     <text class="wx-text_psuTeR">学历</text>
     <picker class="picker1" mode="selector" range="{{educations}}" value="{{index}}" bindchange="bindPickerChange1">
-      <button class="wx-button_VyXmyK" name="education">{{education}}</button>
+      <button class="wx-button_VyXmyK" name="education">{{userInfo.education}}</button>
     </picker>
   </view>
   <view class="wx-view_39uYnO">
     <text class="wx-text_psuTeR">所学专业</text>
-    <input class="wx-input_VyXmyK" name="major" placeholder="请填写所学专业" placeholder-style="font-size: 25rpx;text-align: center;" type="text" bindblur="checkout" data-name="4" />
+    <input class="wx-input_VyXmyK" name="major" placeholder="请填写所学专业" placeholder-style="font-size: 25rpx;text-align: center;" type="text" bindblur="checkout" data-name="4" value="{{userInfo.major}}" />
   </view>
   <view class="wx-view_39uYnO">
     <text class="wx-text_psuTeR">工作经验</text>
     <picker mode="selector" range="{{industries}}" value="{{index}}" bindchange="bindPickerChange2">
-      <button class="wx-button_VyXmyK" name="industry">{{industry}}</button>
+      <button class="wx-button_VyXmyK" name="industry">{{userInfo.industry}}</button>
     </picker>
   </view>
   <view class=" wx-view_39uYnO ">
     <text class="wx-text_psuTeR ">从业时间</text>
-    <input class="wx-input_VyXmyK " name="worktime" placeholder="请填写从业时间 " placeholder-style="font-size: 25rpx; text-align: center;" type="number" bindblur="checkout" data-name="5" maxlength="2" />
+    <input class="wx-input_VyXmyK " name="worktime" placeholder="请填写从业时间 " placeholder-style="font-size: 25rpx; text-align: center;" type="number" bindblur="checkout" data-name="5" maxlength="2" value="{{userInfo.workTime}}" />
   </view>
   <view class="wx-view_39uYnO ">
     <text class="wx-text_psuTeR ">期望工作类型</text>
@@ -74,15 +69,7 @@
       </label>
     </radio-group>
   </view>
-  <view class="wx-view_39uYnO">
-    <text class="wx-text_tlYE2o">从何种渠道了解到我们的招聘会</text>
-  </view>
-  <view class="wx-view_pL9v5l">
-    <picker mode="selector" range="{{ways}}" value="{{index}}" bindchange="bindPickerChange5">
-      <button class="wx-button_VyXmyK b1" name="way">{{way}}</button>
-    </picker>
-  </view>
   <button class="wx-button_Y7AQAY" hover-class="button-hover" size="default" type="default" form-type="submit">
-    提交资料  获得入场券
+    确认修改
   </button>
 </form>

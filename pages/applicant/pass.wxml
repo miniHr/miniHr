@@ -1,0 +1,21 @@
+<view class="wx-view_tbu0Sn">
+  <text class="wx-text_eQ8HIN">淮北智诚人力    7月30号招聘会</text>
+</view>
+<view class="wx-view_Vi82WT">
+  <text class="wx-text_dc74rG">入场券</text>
+</view>
+<view class="wx-view_KyEYoC">
+  <text class="wx-text_1rXDII">请将此页面展示给我们的工作人员</text>
+  <text class="wx-text_Po8z3r">即可入场</text>
+</view>
+<view class="wx-view_2TeYCS">
+  <button class="wx-button_0joZZL" hover-class="button-hover" size="default" type="default">
+    查看会场内部所有企业
+  </button>
+  <button class="wx-button_0joZZL" hover-class="button-hover" size="default" type="default" bindtap="toGetRecommend">
+    为我智能匹配最佳岗位
+  </button>
+  <button class="wx-button_0joZZL" hover-class="button-hover" size="default" type="default" bindtap="toModify">
+    查看或修改我的简历
+  </button>
+</view>

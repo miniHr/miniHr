@@ -37,9 +37,9 @@ Page({
     }
   },
 
-  fillResume: function () {
-    wx.navigateTo({
-      url: '../applicant/fill?boothId=' + this.data.boothId + '&jobId=' + this.data.jobId
+  sendResume: function () {
+    wx.redirectTo({
+      url: '../applicant/navigation?jobId=' + this.data.jobId + "&boothId=" + this.data.boothId
     })
   }
 })
