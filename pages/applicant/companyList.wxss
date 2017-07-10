@@ -1,0 +1,87 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 33%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+  background-color: #5cc6b8;
+  font-weight:bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name {
+  width: 33%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+  background-color: #7c92cb;
+  font-weight:bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.booth {
+  width: 35%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+  background-color: #02b8cd;
+  font-weight:bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wx-view_kqSeNu {
+  margin-top: 5%;
+  flex: auto;
+  position: relative;
+}
+
+.view_kqSeNu scroll-view {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.companyList {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.companyLogo {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 90%;
+  margin-left: 20rpx;
+}
+
+.companyName {
+  width: 500rpx;
+  font-size: 30rpx;
+  font-weight: bolder;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.companyBooth {
+  width: 30px;
+  font-size: 35rpx;
+  text-align: right;
+  color:red;
+}

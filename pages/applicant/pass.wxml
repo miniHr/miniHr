@@ -9,7 +9,7 @@
   <text class="wx-text_Po8z3r">即可入场</text>
 </view>
 <view class="wx-view_2TeYCS">
-  <button class="wx-button_0joZZL" hover-class="button-hover" size="default" type="default">
+  <button class="wx-button_0joZZL" hover-class="button-hover" size="default" type="default" bindtap="toGetCompanyList">
     查看会场内部所有企业
   </button>
   <button class="wx-button_0joZZL" hover-class="button-hover" size="default" type="default" bindtap="toGetRecommend">

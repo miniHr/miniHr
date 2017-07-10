@@ -1,0 +1,8 @@
+{
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#56c2b5",
+  "navigationBarTitleText": "公司列表",
+  "backgroundColor": "#ffffff",
+  "enablePullDownRefresh": false,
+  "backgroundTextStyle": "dark"
+}

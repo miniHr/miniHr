@@ -12,6 +12,7 @@
     "pages/index/index",
     "pages/applicant/applicant",
     "pages/applicant/pass",
+    "pages/applicant/companyList",
     "pages/applicant/modifyResume",
     "pages/applicant/navigation",
     "pages/applicant/resume",

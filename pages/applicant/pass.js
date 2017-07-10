@@ -56,6 +56,12 @@ Page({
     }
   },
 
+  toGetCompanyList:function(e){
+    wx.navigateTo({
+      url: 'companyList'
+    })
+  },
+
   toGetRecommend: function (e) {
     wx.navigateTo({
       url: '../job/job?level=1'

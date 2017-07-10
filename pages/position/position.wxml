@@ -1,13 +1,13 @@
 <view class="wx-view_k3EMOa">
-  <image class="wx-image_lDQjhT" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/2548e499a3a1f0baecdb97aea43b8377_origin.png" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat;" />
+  <image class="wx-image_lDQjhT" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/409181c5df1c8b33594e32e8cbec70b1_origin.png" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat;" />
 </view>
 <view class="wx-view_l4tg0N">
-  <view class="wx-view_k7sq1h" wx:for="{{seatsInfo}}" data-price="{{item.price}}" data-state="{{item.state}}" data-id="{{item.id}}" bindtap="toBuy">
+  <view class="wx-view_k7sq1h" wx:for="{{seatsInfo}}" data-price="{{item.price}}" data-state="{{item.state}}" data-id="{{item.id}}">
     <view class="wx-view_7naiDV">
       <text class="wx-text_mBTXV9">{{item.id}}号展位</text>
       <text class="wx-text_QeKmNY">{{item.price}}元</text>
-      <text class="wx-text_StQoG5" wx:if="{{item.state==1}}">尚未注册 点击购买</text>
-      <text class="wx-text_StQoG5" wx:else>智诚人力</text>
+      <button class="wx-button_StQoG5" wx:if="{{item.state==1}}" data-price="{{item.price}}" data-state="{{item.state}}" data-id="{{item.id}}" bindtap="toBuy">尚未注册 点击购买</button>
+      <button class="wx-button_StQoG5" wx:else disabled="true">已被购买</button>
     </view>
     <image class="wx-image_f7WpcD" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/55d122e1e0703553421bd7ddfe26c9dd_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;" />
   </view>
