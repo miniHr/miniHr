@@ -10,7 +10,7 @@
   </view>
   <view class="wx-view_39uYnO">
     <text class="wx-text_psuTeR">手机号</text>
-    <input class="wx-input_VyXmyK" name="phone" placeholder="请填写手机号" placeholder-style="font-size: 25rpx;text-align: center;" type="number" bindblur="checkout" data-name="phone" />
+    <input class="wx-input_VyXmyK" name="phone" placeholder="请填写手机号" placeholder-style="font-size: 25rpx;text-align: center;" type="number" bindblur="checkout" data-name="phone" confirm-type="done"/>
   </view>
   <view class="wx-view_39uYnO">
     <text class="wx-text_psuTeR">性别</text>
@@ -27,7 +27,7 @@
   </view>
   <view class="wx-view_39uYnO">
     <text class="wx-text_psuTeR">年龄</text>
-    <input class="wx-input_VyXmyK" name="age" placeholder="请填写年龄" placeholder-style="font-size: 25rpx;text-align: center;" type="number" bindblur="checkout" data-name="3" maxlength="2" />
+    <input class="wx-input_VyXmyK" name="age" placeholder="请填写年龄" placeholder-style="font-size: 25rpx;text-align: center;" type="number" bindblur="checkout" data-name="3" maxlength="2" confirm-type="done"/>
   </view>
   <view class="wx-view_39uYnO">
     <text class="wx-text_psuTeR">学历</text>
@@ -47,7 +47,7 @@
   </view>
   <view class=" wx-view_39uYnO ">
     <text class="wx-text_psuTeR ">从业时间</text>
-    <input class="wx-input_VyXmyK " name="worktime" placeholder="请填写从业时间 " placeholder-style="font-size: 25rpx; text-align: center;" type="number" bindblur="checkout" data-name="5" maxlength="2" />
+    <input class="wx-input_VyXmyK " name="worktime" placeholder="请填写从业时间 " placeholder-style="font-size: 25rpx; text-align: center;" type="number" bindblur="checkout" data-name="5" maxlength="2" confirm-type="done"/>
   </view>
   <view class="wx-view_39uYnO ">
     <text class="wx-text_psuTeR ">期望工作类型</text>
