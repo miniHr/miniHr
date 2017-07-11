@@ -7,7 +7,7 @@
 }
 
 .wx-image_lDQjhT {
-  width: 100%;
+  width: 80%;
   height: 850rpx;
 }
 
@@ -38,13 +38,13 @@
 .wx-text_QeKmNY {
   font-size: 13px;
   margin-left: 50rpx;
+  width: 170rpx;
 }
 
 .wx-button_StQoG5 {
-  font-size: 22rpx;
-  margin-left: 90rpx;
-  width: 300rpx;
-  height: 43rpx;
+  font-size: 30rpx;
+  width: 250rpx;
+  height: 60rpx;
   justify-content: center;
   align-items: center;
   text-align: center;

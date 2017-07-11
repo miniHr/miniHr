@@ -41,8 +41,9 @@ Page({
         if (res.data.retCode == '00') {
           var arr = res.data.retData;
           for (var i = 0; i < arr.length; i++) {
-            var price = arr[i].price.toString();
-            price = price.substring(0, price.length - 2);
+            var price = ((arr[i].price) * 0.01).toString();
+            var reg = price.indexOf('.') > -1 ? /(\d{1,3})(?=(?:\d{3})+\.)/g : /(\d{1,3})(?=(?:\d{3})+$)/g;
+            price = price.replace(reg, '$1,');
             arr[i].price = price;
           }
           that.setData({
@@ -63,14 +64,15 @@ Page({
     if (e.currentTarget.dataset.state == 1) {
       var companyId = app.globalData.companyId;
       var id = e.currentTarget.dataset.id;
-      var amt = e.currentTarget.dataset.price;
+      var amt = parseFloat(e.currentTarget.dataset.price);
+      amt = amt * 100;
       if (companyId == null) {
         wx.navigateTo({
-          url: '../enterpriseInfo/enterpriseInfo?id=' + id + '&amount=' + amt + "00"
+          url: '../enterpriseInfo/enterpriseInfo?id=' + id + '&amount=' + amt.toString()
         })
       } else {
         wx.navigateTo({
-          url: '../pay/pay?boothId=' + id + '&companyId=' + companyId + '&amt=' + amt + "00"
+          url: '../pay/pay?boothId=' + id + '&companyId=' + companyId + '&amt=' + amt.toString()
         })
       }
     }
