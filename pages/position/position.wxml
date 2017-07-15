@@ -1,5 +1,5 @@
 <view class="wx-view_k3EMOa">
-  <image class="wx-image_lDQjhT" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/409181c5df1c8b33594e32e8cbec70b1_origin.png" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat;" />
+  <image class="wx-image_lDQjhT" mode="scaleToFill" src="http://minihr-1253786322.cossh.myqcloud.com/images/booth.png" style="background-size: 100% 100%; background-position: 0% 0%; background-repeat: no-repeat;" />
 </view>
 <view class="wx-view_l4tg0N">
   <view class="wx-view_k7sq1h" wx:for="{{seatsInfo}}" data-price="{{item.price}}" data-state="{{item.state}}" data-id="{{item.id}}">
