@@ -4,8 +4,8 @@
   <view class="booth">展位号</view>
 </view>
 <view class="wx-view_kqSeNu">
-  <scroll-view scroll-y="true" bindscrolltolower="searchScrollLower">
-    <view class="companyList" wx:for="{{companyList}}">
+  <scroll-view scroll-y="true" style="height: 1072rpx;position: absolute;" bindscrolltolower="searchScrollLower">
+    <view class="companyList" wx:for="{{companyList}}" bindtap="toCompanyDetail" data-id="{{item.id}}">
       <image class="companyLogo" src="{{item.image}}"></image>
       <text class="companyName">{{item.companyName}}</text>
       <text class="companyBooth">{{item.boothId}}</text>

@@ -47,7 +47,7 @@
   </view>
   <view class=" wx-view_39uYnO ">
     <text class="wx-text_psuTeR ">从业时间</text>
-    <input class="wx-input_VyXmyK " name="worktime" placeholder="请填写从业时间 " placeholder-style="font-size: 25rpx; text-align: center;" type="number" bindblur="checkout" data-name="5" maxlength="2" confirm-type="done"/>
+    <input class="wx-input_VyXmyK " name="worktime" placeholder="请填写从业时间(年)" placeholder-style="font-size: 25rpx; text-align: center;" type="number" bindblur="checkout" data-name="5" maxlength="2" confirm-type="done"/>
   </view>
   <view class="wx-view_39uYnO ">
     <text class="wx-text_psuTeR ">期望工作类型</text>

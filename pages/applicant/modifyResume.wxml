@@ -47,24 +47,24 @@
   <view class="wx-view_39uYnO ">
     <text class="wx-text_psuTeR ">期望工作类型</text>
     <picker mode="selector" range="{{industries}}" value="{{index}}" bindchange="bindPickerChange3">
-      <button class="wx-button_VyXmyK" name="expectType">{{expectType}}</button>
+      <button class="wx-button_VyXmyK" name="expectType">{{userInfo.expectedJob}}</button>
     </picker>
   </view>
   <view class="wx-view_39uYnO">
     <text class="wx-text_psuTeR">期望工作地点</text>
     <picker mode="selector" range="{{expectAddres}}" value="{{index}}" bindchange="bindPickerChange4">
-      <button class="wx-button_VyXmyK" name="expectAddr">{{expectAddr}}</button>
+      <button class="wx-button_VyXmyK" name="expectAddr">{{userInfo.expectedBase}}</button>
     </picker>
   </view>
   <view class="wx-view_39uYnO">
     <text class="wx-text_6pytKT">是否接受外地工作</text>
     <radio-group class="wx-radio-group_thc0Ck" bindchange="changeSelection">
       <label class="weui-radio-label_UpHum5 yes">
-        <radio class="wx-radio_MPrPb5" type="radio" checked="true" value="0" />
+        <radio class="wx-radio_MPrPb5" type="radio" checked="{{userInfo.acceptOut==0}}" value="0" />
         <text class="wx-text_CARrpa">是</text>
       </label>
       <label class="weui-radio-label_UpHum5 no">
-        <radio class="wx-radio_MPrPb5" type="radio" value="1" />
+        <radio class="wx-radio_MPrPb5" type="radio" value="1" checked="{{userInfo.acceptOut==1}}"/>
         <text class="wx-text_CARrpa">否</text>
       </label>
     </radio-group>

@@ -51,28 +51,31 @@ Page({
 
   bindPickerChange3: function (e) {
     var arr = this.data.industries;
-    this.data.userInfo.industry = arr[e.detail.value];
+    this.data.userInfo.expectedJob = arr[e.detail.value];
     this.setData({
-      userInfo: userInfo
+      userInfo: this.data.userInfo
     })
   },
 
   bindPickerChange4: function (e) {
     var arr = this.data.expectAddres;
+    this.data.userInfo.expectedBase = arr[e.detail.value];
     this.setData({
-      expectAddr: arr[e.detail.value]
+      userInfo: this.data.userInfo
     })
   },
 
   changeSelection: function (e) {
     var that = this;
     if ("sex" == e.currentTarget.dataset.name) {
+      that.data.userInfo.sex = e.detail.value;
       that.setData({
-        sex: e.detail.value
+        userInfo: this.data.userInfo
       })
     } else {
+      that.data.userInfo.acceptOut = e.detail.value;
       that.setData({
-        nolocal: e.detail.value
+        userInfo: this.data.userInfo
       })
     }
   },
@@ -168,20 +171,6 @@ Page({
     }
   },
 
-  changeSelection: function (e) {
-    var that = this;
-    if ("sex" == e.currentTarget.dataset.name) {
-      that.data.userInfo.sex = e.detail.value;
-      that.setData({
-        userInfo: that.data.userInfo
-      })
-    } else {
-      that.setData({
-        nolocal: e.detail.value
-      })
-    }
-  },
-
   commit: function (e) {
     var that = this;
     if (!(that.data.correct1 && that.data.correct2 && that.data.correct3 && that.data.correct4 && that.data.correct5)) {
@@ -202,7 +191,11 @@ Page({
           industry: that.data.userInfo.industry,
           workTime: that.data.userInfo.workTime,
           education: that.data.userInfo.education,
-          major: that.data.userInfo.major
+          major: that.data.userInfo.major,
+          expectedJob: that.data.userInfo.expectedJob,
+          expectedBase: that.data.userInfo.expectedBase,
+          acceptOut: that.data.userInfo.acceptOut,
+          channel: that.data.userInfo.channel
         },
         method: 'GET',
         success: function (res1) {
@@ -214,6 +207,8 @@ Page({
             })
           } else {
             app.globalData.userInfo = that.data.userInfo;
+            var user = JSON.stringify(that.data.userInfo);
+            wx.setStorageSync('jsonPerson',user);
             wx.navigateBack({
               delta: 1
             })

@@ -2,14 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 6%;
+  margin-top: 3%;
 }
 
 .wx-view_Vi82WT {
-  margin-top: 15%;
+  height: 490rpx;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  background-image: url(http://minihr-1253786322.cossh.myqcloud.com/images/20170723095333.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .wx-text_eQ8HIN {
@@ -25,7 +28,6 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  margin-top: 15%;
 }
 
 .wx-text_1rXDII {
@@ -34,7 +36,7 @@
 
 .wx-view_2TeYCS {
   display: flex;
-  margin-top: 15%;
+  margin-top: 5%;
   flex-direction: column;
   align-items: center;
 }

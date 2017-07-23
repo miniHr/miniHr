@@ -26,7 +26,8 @@ Page({
         if ('01' == res1.data.retCode) {
           wx.showModal({
             title: '意外',
-            content: '出了点小差错！'
+            content: '出了点小差错！',
+            showCancel:false
           })
         } else {
           that.setData({
@@ -52,7 +53,8 @@ Page({
         if ('01' == res1.data.retCode) {
           wx.showModal({
             title: '意外',
-            content: '出了点小差错！'
+            content: '出了点小差错！',
+            showCancel: false
           })
         } else {
           that.setData({
@@ -73,7 +75,8 @@ Page({
     if (ind2 >= r.length) {
       wx.showModal({
         title: '提示',
-        content: '没有更多的简历！'
+        content: '没有更多的简历！',
+        showCancel: false
       })
     } else {
       var ind = that.data.resume.id;
@@ -87,13 +90,18 @@ Page({
           if ('01' == response.data.retCode) {
             wx.showModal({
               title: '意外',
-              content: '出了点小差错！'
+              content: '出了点小差错！',
+              showCancel: false
             })
           } else {
-
             that.setData({
               resumesIndex: ind2 + 1,
               resume: r[ind2 + 1]
+            })
+            wx.showModal({
+              title: '提示',
+              content: '操作成功！',
+              showCancel: false
             })
           }
         }
@@ -108,7 +116,8 @@ Page({
     if (ind2 >= r.length) {
       wx.showModal({
         title: '提示',
-        content: '没有更多的简历！'
+        content: '没有更多的简历！',
+        showCancel: false
       })
     } else {
       var ind = that.data.resume.id;
@@ -122,13 +131,19 @@ Page({
           if ('01' == response.data.retCode) {
             wx.showModal({
               title: '意外',
-              content: '出了点小差错！'
+              content: '出了点小差错！',
+              showCancel: false
             })
           } else {
             var r = that.data.resumes;
             that.setData({
               resumesIndex: ind2 + 1,
               resume: r[ind2 + 1]
+            })
+            wx.showModal({
+              title: '提示',
+              content: '操作成功！',
+              showCancel: false
             })
           }
         }

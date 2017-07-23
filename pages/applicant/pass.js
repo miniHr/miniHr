@@ -36,7 +36,11 @@ Page({
           industry: that.data.userInfo.industry,
           workTime: that.data.userInfo.workTime,
           education: that.data.userInfo.education,
-          major: that.data.userInfo.major
+          major: that.data.userInfo.major,
+          expectedJob: that.data.userInfo.expectedJob,
+          expectedBase: that.data.userInfo.expectedBase,
+          acceptOut: that.data.userInfo.acceptOut,
+          channel: that.data.userInfo.channel
         },
         method: 'GET',
         success: function (res1) {

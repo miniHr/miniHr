@@ -45,9 +45,18 @@ Page({
         if ('01' == res1.data.retCode) {
           wx.showModal({
             title: '意外',
-            content: '出了点小差错！'
+            content: '出了点小差错！',
+            showCancel:false
           })
         } else {
+          if(res1.data.retData.listInfos.length<1){
+            wx.showModal({
+              title: '很遗憾',
+              content: '没有适合您的职位',
+              showCancel: false
+            })
+            return;
+          }
           that.setData({
             recommends: res1.data.retData.listInfos
           })

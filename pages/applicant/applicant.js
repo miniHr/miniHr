@@ -176,7 +176,11 @@ Page({
         industry: that.data.industry,
         workTime: e.detail.value.worktime,
         education: that.data.education,
-        major: e.detail.value.major
+        major: e.detail.value.major,
+        expectedJob: that.data.expectType,
+        expectedBase: that.data.expectAddr,
+        acceptOut: that.data.nolocal,
+        channel: that.data.way
       };
       var jsonPerson=JSON.stringify(person);
       wx.redirectTo({
