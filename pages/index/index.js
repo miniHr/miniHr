@@ -82,8 +82,9 @@ Page({
     var level = app.globalData.level;
     if (level != null) {
       if (level == '1') {//个人用户
+        var jsonPerson = JSON.stringify(wx.getStorageSync('jsonPerson'));
         wx.redirectTo({
-          url: '../job/job?level=' + level
+          url: '../applicant/pass?jsonPerson=' + jsonPerson + '&isInsert=no'
         })
       } else if (level == '2') {//已付费企业用户
         wx.redirectTo({
