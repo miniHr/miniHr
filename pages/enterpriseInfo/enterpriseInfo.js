@@ -48,7 +48,8 @@ Page({
           data: {
             openId: wx.getStorageSync('openId'),
             companyName: companyName,
-            phone: companyPhone
+            phone: companyPhone,
+            boothId: that.data.boothId
           },
           method: 'GET',
           success: function (res) {

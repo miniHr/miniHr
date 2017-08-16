@@ -200,7 +200,7 @@ checkbox-group, radio-group {
 
 .text10 {
   margin-top: 155px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .text11 {

@@ -86,13 +86,17 @@ Page({
         wx.redirectTo({
           url: '../applicant/pass?jsonPerson=' + jsonPerson + '&isInsert=no'
         })
-      } else if (level == '2') {//已付费企业用户
+      // } else if (level == '2') {//已付费企业用户
+      //   wx.redirectTo({
+      //     url: '../ResumeCollected/ResumeCollected',
+      //   })
+      // } else {//未付费企业用户
+      //   wx.redirectTo({
+      //     url: '../position/position',
+      //   })
+      }else{
         wx.redirectTo({
-          url: '../ResumeCollected/ResumeCollected',
-        })
-      } else {//未付费企业用户
-        wx.redirectTo({
-          url: '../position/position',
+          url: '../enter/enter',
         })
       }
     } else {
@@ -116,13 +120,18 @@ Page({
               wx.redirectTo({
                 url: '../applicant/pass?jsonPerson=' + jsonPerson +'&isInsert=no'
               })
-            } else if (res.data.retData.level == '2') {
+            // } else if (res.data.retData.level == '2') {
+            //   wx.redirectTo({
+            //     url: '../ResumeCollected/ResumeCollected'
+            //   })
+            // } else {
+            //   wx.redirectTo({
+            //     url: '../position/position'
+            //   })
+            // }
+            }else{
               wx.redirectTo({
-                url: '../ResumeCollected/ResumeCollected'
-              })
-            } else {
-              wx.redirectTo({
-                url: '../position/position'
+                url: '../enter/enter',
               })
             }
           }
