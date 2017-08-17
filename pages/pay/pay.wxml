@@ -2,7 +2,7 @@
     <text class="text10" >您已预定</text>
     <text class="text10" id="textId1">本次大型招聘会</text>
     <text class="text11" >“{{boothId}}号展位”</text>
-    <!-- <text class="text12" >确认无误后，请在10分钟内完成支付，谢谢！</text> -->
+    <text class="text12" >付费等其他详情，请联络智诚工作人员</text> 
 </view>
 <!-- <button class="button7"  hover-class="button-hover" size="default" type="default" bindtap="toWxpayment">
     立即支付

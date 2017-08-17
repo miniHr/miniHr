@@ -6,7 +6,7 @@
     <view class="wx-view_7naiDV">
       <text class="wx-text_mBTXV9">{{item.id}}号展位</text>
       <text class="wx-text_QeKmNY">{{item.price}}元</text>
-      <button class="wx-button_StQoG5" wx:if="{{item.state==1}}" data-price="{{item.price}}" data-state="{{item.state}}" data-id="{{item.id}}" bindtap="toBuy">点击购买</button>
+      <button class="wx-button_StQoG5" wx:if="{{item.state==1}}" data-price="{{item.price}}" data-state="{{item.state}}" data-id="{{item.id}}" bindtap="toBuy">点击预定</button>
       <button class="wx-button_StQoG5" wx:else disabled="true">展位已订</button>
     </view>
     <image class="wx-image_f7WpcD" mode="scaleToFill" src="http://qty83k.creatby.com/materials/origin/55d122e1e0703553421bd7ddfe26c9dd_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat;" />

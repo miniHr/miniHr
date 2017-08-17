@@ -71,8 +71,10 @@ Page({
           url: '../enterpriseInfo/enterpriseInfo?id=' + id + '&amount=' + amt.toString()
         })
       } else {
-        wx.navigateTo({
-          url: '../pay/pay?boothId=' + id + '&companyId=' + companyId + '&amt=' + amt.toString()
+        wx.showModal({
+          title: '温馨提示',
+          content: '您已经预定了一个展位，如需更改，请联络智诚工作人员。',
+          showCancel:false
         })
       }
     }
